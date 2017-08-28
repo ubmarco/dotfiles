@@ -14,7 +14,7 @@ On Ubuntu::
 
     cd
     git clone https://github.com/ubmarco/dotfiles .dotfiles
-    mv .dotfiles/rcrc .rcrc
+    cp .dotfiles/rcrc .rcrc
 
     lsrc
     rcup -v
