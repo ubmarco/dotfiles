@@ -19,5 +19,12 @@ On Ubuntu::
     lsrc
     rcup -v
 
-You also want to create the file ~/.gitconfig_review. It's referenced in .dotfiles/gitconfig
+You also want to create the file ~/.gitconfig_review. It's referenced in .dotfiles/gitconfig and contains the following::
+
+
+    [alias]
+    reviewdv = push origin HEAD:refs/for/master%r=<mail>
+        reviewdw = push origin HEAD:refs/for/master%r=<mail>
+        reviewlb = push origin HEAD:refs/for/master%r=<mail>
+        reviewall = push origin HEAD:refs/for/master%r=<mail>,r=<mail>,r=<mail>
 
