@@ -23,7 +23,7 @@ You also want to create the file ~/.gitconfig_review. It's referenced in .dotfil
 
 
     [alias]
-    reviewdv = push origin HEAD:refs/for/master%r=<mail>
+        reviewdv = push origin HEAD:refs/for/master%r=<mail>
         reviewdw = push origin HEAD:refs/for/master%r=<mail>
         reviewlb = push origin HEAD:refs/for/master%r=<mail>
         reviewall = push origin HEAD:refs/for/master%r=<mail>,r=<mail>,r=<mail>
