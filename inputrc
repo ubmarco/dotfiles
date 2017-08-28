@@ -1,0 +1,4 @@
+# VI key bindings
+set editing-mode vi
+set keymap vi
+set show-mode-in-prompt on

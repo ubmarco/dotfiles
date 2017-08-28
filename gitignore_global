@@ -1,0 +1,17 @@
+# Ansible managed: /useblocks/dev/ansible_init/roles/git_config/templates/gitignore.j2 modified on 2016-10-19 09:38:51 by marco on knecht
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# Vagrant
+.vagrant/
+
