@@ -1,0 +1,1 @@
+EXCLUDES="dotfiles:README.rst dotfiles:LICENSE"
