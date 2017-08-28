@@ -14,6 +14,10 @@ On Ubuntu::
 
     cd
     git clone https://github.com/ubmarco/dotfiles .dotfiles
+    mv .dotfiles/rcrc .rcrc
 
     lsrc
     rcup -v
+
+You also want to create the file ~/.gitconfig_review. It's referenced in .dotfiles/gitconfig
+
