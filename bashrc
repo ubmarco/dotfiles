@@ -115,7 +115,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Custom bash additionis
 test -f ~/.bash_cust && source ~/.bash_cust
 
-# added by travis gem
-[ -f /home/marco/.travis/travis.sh ] && source /home/marco/.travis/travis.sh
+

@@ -35,6 +35,9 @@ alias iotop='sudo iotop -aPo'
 alias reset='tput reset'
 alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 
+# added by travis gem
+[ -f /home/marco/.travis/travis.sh ] && source /home/marco/.travis/travis.sh
+
 # autoenv
-source /usr/local/bin/activate.sh
+test -f /usr/local/bin/activate.sh && source /usr/local/bin/activate.sh
 
