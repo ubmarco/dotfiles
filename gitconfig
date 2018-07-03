@@ -16,7 +16,7 @@
 [alias]
     s = status -b -s
     co = checkout
-    l = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=short --date=relative --graph --decorate --all
+    l = log --pretty=format:'%C(yellow)%h %C(red)%ad %C(cyan)%an%C(green)%d %Creset%s' --date=short --date=relative --graph --decorate --all
     bv = branch -avv
     dd = difftool -d
     reviewme = push origin HEAD:refs/for/master
