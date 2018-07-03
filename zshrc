@@ -21,6 +21,7 @@ BULLETTRAIN_PROMPT_ORDER=(
   git
   status
   screen
+  cmd_exec_time
 )
 
 BULLETTRAIN_STATUS_EXIT_SHOW="true"
