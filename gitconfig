@@ -5,7 +5,8 @@
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
-	autocrlf = input
+    autocrlf = input
+    pager = less -F -X -E
 
 [color]
     ui = true
@@ -26,12 +27,13 @@
     path = ~/.gitconfig_review
 
 [diff]
-	tool = bcomp
+    tool = bcomp
 
 [credential]
     helper = cache --timeout=3600
 
 [difftool]
-	bcomp = trustExitCode
+    bcomp = trustExitCode
 [difftool "bcomp"]
-	cmd = bcompare $LOCAL $REMOTE
+    cmd = bcompare $LOCAL $REMOTE
+
