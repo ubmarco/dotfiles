@@ -80,6 +80,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  zsh-syntax-highlighting
 #  vi-mode
 )
 
@@ -122,3 +123,7 @@ alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 
 # activate direnv
 eval "$(direnv hook zsh)"
+
+# activate syntax highlighting
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+

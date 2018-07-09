@@ -21,7 +21,7 @@ Setup rcm and the dotfiles::
 
 Setup ZSH::
 
-    sudo apt install zsh fonts-powerline
+    sudo apt install zsh fonts-powerline zsh-syntax-highlighting
 
     sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
