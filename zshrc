@@ -25,6 +25,7 @@ BULLETTRAIN_PROMPT_ORDER=(
 )
 
 BULLETTRAIN_STATUS_EXIT_SHOW="true"
+BULLETTRAIN_VIRTUALENV_FG="black"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -79,7 +80,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  vi-mode
+#  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
