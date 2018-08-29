@@ -39,7 +39,7 @@ BULLETTRAIN_VIRTUALENV_FG="black"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
@@ -84,6 +84,7 @@ plugins=(
 #  vi-mode
 )
 
+ZSH_DISABLE_COMPFIX=true
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -125,5 +126,11 @@ alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 eval "$(direnv hook zsh)"
 
 # activate syntax highlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# activate fzf
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+export PIPENV_VENV_IN_PROJECT=true
+unset SSH_ASKPASS
