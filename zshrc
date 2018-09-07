@@ -122,15 +122,13 @@ alias iotop='sudo iotop -aPo'
 alias reset='tput reset'
 alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 
+export PIPENV_VENV_IN_PROJECT=true
+
 # activate direnv
 eval "$(direnv hook zsh)"
 
-# activate syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# activate fzf
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
-
-export PIPENV_VENV_IN_PROJECT=true
+# don't use GUI elements when asking for SSH passwords
 unset SSH_ASKPASS
+
+# activate fzf (contains key-bindings and completion)
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

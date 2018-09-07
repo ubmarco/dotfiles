@@ -120,3 +120,5 @@ fi
 test -f ~/.bash_cust && source ~/.bash_cust
 
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
