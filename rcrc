@@ -1,1 +1,2 @@
-EXCLUDES=".dotfiles:README.rst .dotfiles:LICENSE"
+EXCLUDES="*:README.rst *:LICENSE *:unlinked"
+UNDOTTED="*:Desktop *:backup*.sh"
