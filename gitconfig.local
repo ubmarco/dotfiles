@@ -1,3 +1,6 @@
 [user]
     name = Marco Heinemann
-    email = Marco.Heinemann@partner.bmw.de
+    email = marco.heinemann@useblocks.com
+
+[includeIf "gitdir:~/bmw/git/"]
+    path = ~/.gitconfig.local.bmw
