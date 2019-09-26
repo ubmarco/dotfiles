@@ -14,15 +14,9 @@ au FileType arxml setlocal foldmethod=syntax
 " do not enable folding after file reading
 set nofoldenable
 
-" assign Alt modifier plus navigation key to terminal output
-" map Alt + hjkl to resize the current window
-" exec "set <M-h>=\eh"
-" exec "set <M-j>=\ej"
-" exec "set <M-k>=\ek"
-" exec "set <M-l>=\el" asdf  asdf
-" set -s escape-time 0
-nnoremap <silent> <Esc>k :exe "resize " . (winheight(0) * 3/2)<CR>
-nnoremap <silent> <Esc>j :exe "resize " . (winheight(0) * 2/3)<CR>
-nnoremap <silent> <Esc>l :exe "vertical resize " . (winwidth(0) * 3/2)<CR>
-nnoremap <silent> <Esc>h :exe "vertical resize " . (winwidth(0) * 2/3)<CR>
+" map Alt + arrow keys to resize the current window
+nnoremap <silent> <M-Up> :exe "resize " . (winheight(0) * 5/4)<CR>
+nnoremap <silent> <M-Down> :exe "resize " . (winheight(0) * 4/5)<CR>
+nnoremap <silent> <M-Right> :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
+nnoremap <silent> <M-Left> :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 
