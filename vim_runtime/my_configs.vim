@@ -31,3 +31,6 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
+" ALE config
+let g:ale_linters = {'python': ['flake8', 'pylint']}
+
