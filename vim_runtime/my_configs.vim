@@ -10,6 +10,7 @@ let g:xml_syntax_folding=1
 au FileType xsd setlocal foldmethod=syntax
 au FileType xml setlocal foldmethod=syntax
 au FileType arxml setlocal foldmethod=syntax
+au FileType json setlocal foldmethod=syntax
 
 " do not enable folding after file reading
 set nofoldenable
@@ -20,3 +21,5 @@ nnoremap <silent> <M-Down> :exe "resize " . (winheight(0) * 4/5)<CR>
 nnoremap <silent> <M-Right> :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
 nnoremap <silent> <M-Left> :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 
+" remove S from short message default filnxtToOS to display search count 
+set shortmess=filnxtToO
