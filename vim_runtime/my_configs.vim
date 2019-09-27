@@ -2,7 +2,7 @@ if has('gui_running')
   set guifont="Monospace 10"
 endif
 
-" show line numbers 
+" show line numbers
 set number
 
 " folding
@@ -21,5 +21,13 @@ nnoremap <silent> <M-Down> :exe "resize " . (winheight(0) * 4/5)<CR>
 nnoremap <silent> <M-Right> :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
 nnoremap <silent> <M-Left> :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
 
-" remove S from short message default filnxtToOS to display search count 
+" remove S from short message default filnxtToOS to display search count
 set shortmess=filnxtToO
+
+" highlight trailing whitespaces in red
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
