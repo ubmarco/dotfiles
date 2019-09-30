@@ -1,0 +1,7 @@
+
+bindkey '^[c' fzf-change-directory
+
+export PATH=$PATH:~/.local/bin
+export PIPENV_VENV_IN_PROJECT=true
+alias vim='nvim'
+
