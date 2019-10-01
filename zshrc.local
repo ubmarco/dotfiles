@@ -3,5 +3,9 @@ bindkey '^[c' fzf-change-directory
 
 export PATH=$PATH:~/.local/bin
 export PIPENV_VENV_IN_PROJECT=true
+
+# vim shall start neovim
 alias vim='nvim'
 
+# find files with grep feature
+alias ff='find . -type f | ag'
