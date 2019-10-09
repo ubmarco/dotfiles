@@ -4,8 +4,16 @@ bindkey '^[c' fzf-change-directory
 export PATH=$PATH:~/.local/bin
 export PIPENV_VENV_IN_PROJECT=true
 
-# vim shall start neovim
-alias vim='nvim'
+# Load libython3 before starting vim
+# so this issue does not occur for arxml.vim with lxml
+# using a C extension
+# https://vi.stackexchange.com/a/9918/8580
+# Calls to has('python') will fail
+alias vim='LD_PRELOAD=/usr/lib/libpython3.so vim'
+alias gvim='LD_PRELOAD=/usr/lib/libpython3.so gvim'
 
 # find files with grep feature
 alias ff='find . -type f | ag'
+
+# exit like in vim
+alias :q='exit'
