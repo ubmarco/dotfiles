@@ -34,3 +34,8 @@ autocmd BufWinLeave * call clearmatches()
 " ALE config
 let g:ale_linters = {'python': ['flake8', 'pylint']}
 
+" let Ack.vim use the_silver_searcher
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
