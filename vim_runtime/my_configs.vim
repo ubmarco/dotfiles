@@ -39,3 +39,9 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+" File type based dispatch
+autocmd FileType rst let b:dispatch = 'cd docs && sphinx-build -W -b html . _build/html'
+
+" F4 saves the file and runs silent Dispatch
+map <F4> <ESC>:w<CR>:Dispatch!<CR>
+
