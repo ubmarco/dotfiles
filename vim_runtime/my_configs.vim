@@ -6,7 +6,6 @@ endif
 set number
 
 " folding
-let g:xml_syntax_folding=1
 au FileType xsd setlocal foldmethod=syntax
 au FileType xml setlocal foldmethod=syntax
 au FileType arxml setlocal foldmethod=syntax
