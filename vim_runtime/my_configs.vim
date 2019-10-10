@@ -50,3 +50,8 @@ autocmd FileType rst let b:dispatch = 'cd docs && sphinx-build -W -b html . _bui
 " F4 saves the file and runs silent Dispatch
 map <F4> <ESC>:w<CR>:Dispatch!<CR>
 
+" colorcolumn
+set colorcolumn=120
+highlight ColorColumn ctermbg=DarkGrey guibg=DarkGrey
+autocmd FileType gitcommit set colorcolumn=50
+
