@@ -52,6 +52,6 @@ map <F4> <ESC>:w<CR>:Dispatch!<CR>
 
 " colorcolumn
 set colorcolumn=120
-highlight ColorColumn ctermbg=DarkGrey guibg=DarkGrey
+highlight ColorColumn ctermbg=236 guibg=gray21
 autocmd FileType gitcommit set colorcolumn=50
 
