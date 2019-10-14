@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd DCVersion="0.9.6 beta">
+  <ExtensionAssociation>
+    <FileType>
+      <Name>all files and folders</Name>
+      <IconFile>/usr/share/pixmaps/bcompare.png</IconFile>
+      <ExtensionList>folder|file</ExtensionList>
+      <Actions>
+        <Action>
+          <Name>bcompare</Name>
+          <Command>/usr/bin/bcompare</Command>
+          <Params>%ps</Params>
+        </Action>
+      </Actions>
+    </FileType>
+  </ExtensionAssociation>
+</doublecmd>
