@@ -55,3 +55,6 @@ au FileType python set colorcolumn=120
 highlight ColorColumn ctermbg=236 guibg=gray21
 autocmd FileType gitcommit set colorcolumn=50
 
+" shortcut to toggle fold
+map <F5> za
+
