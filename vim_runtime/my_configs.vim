@@ -51,7 +51,7 @@ autocmd FileType rst let b:dispatch = 'cd docs && sphinx-build -W -b html . _bui
 map <F4> <ESC>:w<CR>:Dispatch!<CR>
 
 " colorcolumn
-set colorcolumn=120
+au FileType python set colorcolumn=120
 highlight ColorColumn ctermbg=236 guibg=gray21
 autocmd FileType gitcommit set colorcolumn=50
 
