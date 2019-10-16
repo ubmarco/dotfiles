@@ -2,7 +2,7 @@
 <doublecmd DCVersion="0.9.6 beta" ConfigVersion="10">
   <Configuration Save="True" SortOrder="0" TreeType="0">
     <UseConfigInProgramDir>False</UseConfigInProgramDir>
-    <FolderTabs Save="True"/>
+    <FolderTabs Save="False"/>
   </Configuration>
   <Colors>
     <FileFilters>
@@ -309,11 +309,11 @@
     </MainToolbar>
   </Toolbars>
   <MainWindow>
-    <Position Save="True">
+    <Position Save="False">
       <Maximized>False</Maximized>
       <Splitter>50</Splitter>
-      <Left>2246</Left>
-      <Top>282</Top>
+      <Left>4776</Left>
+      <Top>274</Top>
       <Width>1759</Width>
       <Height>889</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -335,56 +335,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path Filename="BPS_SP2021_Classic">/home/marco/bmw/svn/asc042/Projects/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc042/Projects/BPS_SP2021_Classic/</Path>
-                  <Path Filename="BPS_SP2021_Classic">/home/marco/bmw/svn/asc042/Projects/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc042/</Path>
-                  <Path Filename="asc120">/home/marco/bmw/svn/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc120/</Path>
-                  <Path Filename="asc322">/home/marco/bmw/svn/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc322/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc322/Projects/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc322/</Path>
-                  <Path Filename="asc001">/home/marco/bmw/svn/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc001/</Path>
-                  <Path Filename="MDE2021_HPAD_SAFETY">/home/marco/bmw/svn/asc001/Projects/</Path>
-                  <Path Filename="tags">/home/marco/bmw/svn/asc001/Projects/MDE2021_HPAD_SAFETY/</Path>
-                  <Path Filename="9.1909.1.0">/home/marco/bmw/svn/asc001/Projects/MDE2021_HPAD_SAFETY/tags/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc001/Projects/MDE2021_HPAD_SAFETY/tags/9.1909.1.0/</Path>
-                  <Path Filename="9.1909.1.0">/home/marco/bmw/svn/asc001/Projects/MDE2021_HPAD_SAFETY/tags/</Path>
-                  <Path Filename="tags">/home/marco/bmw/svn/asc001/Projects/MDE2021_HPAD_SAFETY/</Path>
-                  <Path Filename="MDE2021_HPAD_SAFETY">/home/marco/bmw/svn/asc001/Projects/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc001/</Path>
-                  <Path Filename="asc042">/home/marco/bmw/svn/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc042/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc042/Projects/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc042/</Path>
-                  <Path Filename="asc105">/home/marco/bmw/svn/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc105/</Path>
-                  <Path Filename="ECU_mPAD_SC_Rfe">/home/marco/bmw/svn/asc105/Projects/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc105/</Path>
-                  <Path Filename="asc120">/home/marco/bmw/svn/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc120/</Path>
-                  <Path Filename="asc120">/home/marco/bmw/svn/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc120/</Path>
-                  <Path Filename="BMW_Macc">/home/marco/bmw/svn/asc120/Projects/</Path>
-                  <Path Filename="branches">/home/marco/bmw/svn/asc120/Projects/BMW_Macc/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc120/Projects/BMW_Macc/branches/</Path>
-                  <Path Filename="branches">/home/marco/bmw/svn/asc120/Projects/BMW_Macc/</Path>
-                  <Path Filename="BMW_Macc">/home/marco/bmw/svn/asc120/Projects/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc120/</Path>
-                  <Path Filename="asc322">/home/marco/bmw/svn/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc322/</Path>
-                  <Path Filename="BmwToolsXpad_CI">/home/marco/bmw/svn/asc322/Projects/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc322/Projects/BmwToolsXpad_CI/</Path>
-                  <Path Filename="hPad_Spec">/home/marco/bmw/svn/asc322/Projects/</Path>
-                  <Path Filename="tags">/home/marco/bmw/svn/asc322/Projects/hPad_Spec/</Path>
-                  <Path Filename="..">/home/marco/bmw/svn/asc322/Projects/hPad_Spec/tags/</Path>
-                  <Path Filename="tags">/home/marco/bmw/svn/asc322/Projects/hPad_Spec/</Path>
-                  <Path Filename="hPad_Spec">/home/marco/bmw/svn/asc322/Projects/</Path>
-                  <Path Filename="Projects">/home/marco/bmw/svn/asc322/</Path>
-                  <Path Filename="asc322">/home/marco/bmw/svn/</Path>
-                  <Path Filename="svn">/home/marco/bmw/</Path>
+                  <Path>/home/marco/share_c_level/03_kunden/04_bmw/Projekte/2019_EF414_Com_Tests/20_Angebote/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -395,7 +346,7 @@
         </Tab>
       </Left>
       <Right>
-        <ActiveTab>0</ActiveTab>
+        <ActiveTab>1</ActiveTab>
         <Tab>
           <FileView Type="columns">
             <Sortings>
@@ -408,56 +359,28 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path Filename="latex">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/_build/</Path>
-                  <Path Filename="contents">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/</Path>
-                  <Path Filename="..">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/contents/</Path>
-                  <Path Filename="contents">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/</Path>
-                  <Path Filename="doc_user">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/contents/</Path>
-                  <Path Filename="images">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/contents/doc_user/</Path>
-                  <Path Filename="major.png">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/contents/doc_user/images/</Path>
-                  <Path Filename="images">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/contents/doc_user/</Path>
-                  <Path Filename="doc_dev">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/contents/</Path>
-                  <Path Filename="_build">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/</Path>
-                  <Path Filename="latex">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/_build/</Path>
-                  <Path Filename="arxmlpatcher_esr.autosar_Autosar_compliance.pdf">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/_build/latex/</Path>
-                  <Path Filename="latex">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/_build/</Path>
-                  <Path Filename="_build">/home/marco/bmw/git/ascgit307.arxmlpatcher/docs/</Path>
-                  <Path Filename="build">/home/marco/bmw/git/ascgit307.arxmlpatcher/</Path>
-                  <Path Filename=".vim_runtime">/home/marco/</Path>
-                  <Path Filename="sources_forked">/home/marco/.vim_runtime/</Path>
-                  <Path Filename="Documents">/home/marco/</Path>
-                  <Path Filename="autosar_classic">/home/marco/Documents/</Path>
-                  <Path Filename="Communication">/home/marco/Documents/autosar_classic/</Path>
-                  <Path Filename="AUTOSAR_SWS_SecureOnboardCommunication.pdf">/home/marco/Documents/autosar_classic/Communication/</Path>
-                  <Path Filename="SystemServices">/home/marco/Documents/autosar_classic/</Path>
-                  <Path Filename="AUTOSAR_SRS_FreeRunningTimer.pdf">/home/marco/Documents/autosar_classic/SystemServices/</Path>
-                  <Path Filename="MethodologyAndTemplates">/home/marco/Documents/autosar_classic/</Path>
-                  <Path Filename="AUTOSAR_RS_MethodologyAndTemplatesGeneral.pdf">/home/marco/Documents/autosar_classic/MethodologyAndTemplates/</Path>
-                  <Path Filename="Downloads">/home/marco/</Path>
-                  <Path Filename="exd_download">/home/marco/Downloads/</Path>
-                  <Path Filename="Ethernet3">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="..">/home/marco/Downloads/exd_download/Ethernet3/</Path>
-                  <Path Filename="Ethernet3">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="..">/home/marco/Downloads/exd_download/Ethernet3/</Path>
-                  <Path Filename="Ethernet3_Arxml">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="BusDescription_SP2021_19KW35_V39_Ethernet3_V40_lokal.arxml">/home/marco/Downloads/exd_download/Ethernet3_Arxml/</Path>
-                  <Path Filename="Ethernet3">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="FBX412_SP2021_19KW35_V39_Ethernet3_V40_lokal.xml">/home/marco/Downloads/exd_download/Ethernet3/</Path>
-                  <Path Filename="exd_download">/home/marco/Downloads/</Path>
-                  <Path Filename="Ethernet3">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="..">/home/marco/Downloads/exd_download/Ethernet3/</Path>
-                  <Path Filename="Ethernet3_Arxml">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="..">/home/marco/Downloads/exd_download/Ethernet3_Arxml/</Path>
-                  <Path Filename="Ethernet3.zip">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="exd_download">/home/marco/Downloads/</Path>
-                  <Path Filename="bmw">/home/marco/</Path>
-                  <Path Filename="git">/home/marco/bmw/</Path>
-                  <Path Filename="..">/home/marco/bmw/git/</Path>
-                  <Path Filename="git">/home/marco/bmw/</Path>
-                  <Path Filename="Downloads">/home/marco/</Path>
-                  <Path Filename="exd_download">/home/marco/Downloads/</Path>
-                  <Path Filename="..">/home/marco/Downloads/exd_download/</Path>
-                  <Path Filename="tor-browser_en-US">/home/marco/Downloads/</Path>
+                  <Path>/home/marco/share_c_level/03_kunden/</Path>
+                </Paths>
+              </Entry>
+            </History>
+            <ColumnsView>
+              <ColumnsSet>Default</ColumnsSet>
+            </ColumnsView>
+          </FileView>
+        </Tab>
+        <Tab>
+          <FileView Type="columns">
+            <Sortings>
+              <Sorting>
+                <Direction>1</Direction>
+                <Function>0</Function>
+              </Sorting>
+            </Sortings>
+            <History>
+              <Entry Active="True">
+                <FileSource Type="FileSystem"/>
+                <Paths>
+                  <Path>/home/marco/share_project_files/BorgWarner/1908_passive_Nm_config/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -736,10 +659,10 @@
     <Options>1023</Options>
   </Log>
   <History>
-    <SearchReplaceHistory Save="True"/>
-    <DirHistory Save="True"/>
-    <CmdLineHistory Save="True"/>
-    <FileMaskHistory Save="True"/>
+    <SearchReplaceHistory Save="False"/>
+    <DirHistory Save="False"/>
+    <CmdLineHistory Save="False"/>
+    <FileMaskHistory Save="False"/>
   </History>
   <QuickSearch>
     <MatchBeginning>False</MatchBeginning>
