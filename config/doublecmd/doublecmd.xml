@@ -726,7 +726,6 @@
   <DirectoryHotList>
     <HotDir Name="~/ Downloads" Path="/home/marco/Downloads"/>
     <HotDir Name="~ / Documents" Path="/home/marco/Documents"/>
-    <HotDir Name="~/ SparkleShare / sync" Path="/home/marco/SparkleShare/52.18.24.169/sync2-crypto"/>
     <HotDir Name="Nextcloud / c_level" Path="/home/marco/share_c_level"/>
     <HotDir Name="Nextcloud / project_files" Path="/home/marco/share_project_files"/>
     <HotDir Name="~ /.local/share/Cryptomator/mnt/" Path="/home/marco/.local/share/Cryptomator/mnt"/>
