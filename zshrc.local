@@ -13,7 +13,7 @@ alias vim='LD_PRELOAD=/usr/lib/libpython3.so vim'
 alias gvim='LD_PRELOAD=/usr/lib/libpython3.so gvim'
 
 # find files with grep feature
-alias ff='find . -type f | ag'
+alias ff='find . -type f | ag -i'
 
 # exit like in vim
 alias :q='exit'
