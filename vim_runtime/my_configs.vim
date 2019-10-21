@@ -5,10 +5,10 @@ endif
 " show line numbers
 set number
 
+" set file types
+autocmd BufNewFile,BufRead *.pkg set filetype=xml
+
 " folding
-au FileType xsd setlocal foldmethod=syntax
-au FileType xml setlocal foldmethod=syntax
-au FileType arxml setlocal foldmethod=syntax
 au FileType json setlocal foldmethod=syntax
 
 " do not enable folding after file reading
