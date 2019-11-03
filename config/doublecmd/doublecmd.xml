@@ -335,7 +335,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/marco/share_c_level/03_kunden/04_bmw/Projekte/2019_EF414_Com_Tests/20_Angebote/</Path>
+                  <Path>/home/marco/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -359,28 +359,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/marco/share_c_level/03_kunden/</Path>
-                </Paths>
-              </Entry>
-            </History>
-            <ColumnsView>
-              <ColumnsSet>Default</ColumnsSet>
-            </ColumnsView>
-          </FileView>
-        </Tab>
-        <Tab>
-          <FileView Type="columns">
-            <Sortings>
-              <Sorting>
-                <Direction>1</Direction>
-                <Function>0</Function>
-              </Sorting>
-            </Sortings>
-            <History>
-              <Entry Active="True">
-                <FileSource Type="FileSystem"/>
-                <Paths>
-                  <Path>/home/marco/share_project_files/BorgWarner/1908_passive_Nm_config/</Path>
+                  <Path>/home/marco/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -439,7 +418,7 @@
     <DateTimeFormat>yyyy.mm.dd hh:mm:ss</DateTimeFormat>
     <CutTextToColumnWidth>True</CutTextToColumnWidth>
     <ExtendCellWidth>False</ExtendCellWidth>
-    <ShowSystemFiles>True</ShowSystemFiles>
+    <ShowSystemFiles>False</ShowSystemFiles>
     <ListFilesInThread>True</ListFilesInThread>
     <LoadIconsSeparately>True</LoadIconsSeparately>
     <DelayLoadingTabs>True</DelayLoadingTabs>
