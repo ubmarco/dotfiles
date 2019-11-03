@@ -436,7 +436,7 @@
     <AutoSizeColumn>1</AutoSizeColumn>
     <CustomColumnsChangeAllColumns>False</CustomColumnsChangeAllColumns>
     <BriefViewFileExtAligned>True</BriefViewFileExtAligned>
-    <DateTimeFormat>dd.mm.yyyy hh:mm:ss</DateTimeFormat>
+    <DateTimeFormat>yyyy.mm.dd hh:mm:ss</DateTimeFormat>
     <CutTextToColumnWidth>True</CutTextToColumnWidth>
     <ExtendCellWidth>False</ExtendCellWidth>
     <ShowSystemFiles>True</ShowSystemFiles>
@@ -883,7 +883,7 @@
         <Column>
           <Title>Name</Title>
           <FuncString>[DC().GETFILENAME{}]</FuncString>
-          <Width>591</Width>
+          <Width>431</Width>
           <Align>0</Align>
           <Font>
             <Name>Ubuntu</Name>
@@ -906,7 +906,7 @@
         <Column>
           <Title>Size</Title>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>70</Width>
+          <Width>69</Width>
           <Align>1</Align>
           <Font>
             <Name>Ubuntu</Name>
@@ -927,10 +927,10 @@
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
-          <Title>Date</Title>
+          <Title>Date mod</Title>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>140</Width>
-          <Align>1</Align>
+          <Width>151</Width>
+          <Align>0</Align>
           <Font>
             <Name>Ubuntu</Name>
             <Size>10</Size>
@@ -952,7 +952,7 @@
         <Column>
           <Title>Owner</Title>
           <FuncString>[DC().GETFILEOWNER{}] [DC().GETFILEGROUP{}] </FuncString>
-          <Width>100</Width>
+          <Width>72</Width>
           <Align>0</Align>
           <Font>
             <Name>Ubuntu</Name>
@@ -999,7 +999,62 @@
     </ColumnsSet>
   </ColumnsSets>
   <MultiRenamePresets>
-    <LastPreset/>
-    <Presets/>
+    <LastPreset>Fotos Exif</LastPreset>
+    <Presets>
+      <Preset>
+        <Name>Fotos Exif</Name>
+        <Filename>[=Plugin(&lt;Exif&gt;).Date taken{}]_[N]</Filename>
+        <Extension>[E]</Extension>
+        <FilenameStyle>0</FilenameStyle>
+        <ExtensionStyle>0</ExtensionStyle>
+        <Find>(\d{2}) </Find>
+        <Replace>$1_</Replace>
+        <RegExp>True</RegExp>
+        <UseSubs>True</UseSubs>
+        <Counter>1</Counter>
+        <Interval>1</Interval>
+        <Width>0</Width>
+        <Log>
+          <Enabled>False</Enabled>
+          <File>/media/daten_fat32/Fotos/Fotos Tina und Marco/2019/2019.08.11 - Urlaub Allgäu - Vorarlberg - Tirol/default.log</File>
+        </Log>
+      </Preset>
+      <Preset>
+        <Name>Videos Creation Time</Name>
+        <Filename>[=DC().GETFILETIME{}]_[N]</Filename>
+        <Extension>[E]</Extension>
+        <FilenameStyle>0</FilenameStyle>
+        <ExtensionStyle>0</ExtensionStyle>
+        <Find>(\d{2}) </Find>
+        <Replace>$1_</Replace>
+        <RegExp>True</RegExp>
+        <UseSubs>True</UseSubs>
+        <Counter>1</Counter>
+        <Interval>1</Interval>
+        <Width>0</Width>
+        <Log>
+          <Enabled>False</Enabled>
+          <File>/media/daten_fat32/Fotos/Fotos Tina und Marco/2019/2019.08.11 - Urlaub Allgäu - Vorarlberg - Tirol/default.log</File>
+        </Log>
+      </Preset>
+      <Preset>
+        <Name>Videos From File Name</Name>
+        <Filename>[N5:8].[N9:10].[N11:12]_[N14:15].[N16:17].[N18:19]_VID</Filename>
+        <Extension>[E]</Extension>
+        <FilenameStyle>0</FilenameStyle>
+        <ExtensionStyle>0</ExtensionStyle>
+        <Find/>
+        <Replace/>
+        <RegExp>True</RegExp>
+        <UseSubs>True</UseSubs>
+        <Counter>1</Counter>
+        <Interval>1</Interval>
+        <Width>0</Width>
+        <Log>
+          <Enabled>False</Enabled>
+          <File>/media/daten_fat32/Fotos/Fotos Tina und Marco/2019/2019.08.11 - Urlaub Allgäu - Vorarlberg - Tirol/default.log</File>
+        </Log>
+      </Preset>
+    </Presets>
   </MultiRenamePresets>
 </doublecmd>
