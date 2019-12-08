@@ -51,10 +51,21 @@ autocmd FileType rst let b:dispatch = 'cd docs && sphinx-build -W -b html . _bui
 map <F4> <ESC>:w<CR>:Dispatch!<CR>
 
 " colorcolumn
-au FileType python set colorcolumn=120
+au FileType python,rst set colorcolumn=120
 highlight ColorColumn ctermbg=236 guibg=gray21
 autocmd FileType gitcommit set colorcolumn=50
 
 " shortcut to toggle fold
 map <F5> za
+
+" disable auto-pairs
+let g:AutoPairs = {}
+
+" very magic persistent search
+nnoremap / /\v
+vnoremap / /\v
+cnoremap %s/ %smagic/
+cnoremap >s/ >smagic/
+nnoremap :g/ :g/\v
+nnoremap :g// :g//
 
