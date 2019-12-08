@@ -710,6 +710,8 @@
     <HotDir Name="~ /.local/share/Cryptomator/mnt/" Path="/home/marco/.local/share/Cryptomator/mnt"/>
     <HotDir Name="~/ bmw / git" Path="/home/marco/bmw/git"/>
     <HotDir Name="~/ bmw / svn" Path="/home/marco/bmw/svn"/>
+    <HotDir Name="HAG_GSD / ... / GenComTestData" Path="/home/marco/bmw/svn/asc120/Projects/HAG_GSD/trunk/Tools/GenComTestData"/>
+    <HotDir Name="HAG150AL / ... /  ECU-TEST / ... / Com" Path="/home/marco/bmw/svn/asc120/Projects/HAG150AL/trunk/Test/Config/LMV/ECU-TEST/Packages/Com/Messages"/>
     <HotDir Name="/mnt/dlink_nas/useblocks/98_scanner/" Path="/mnt/dlink_nas/useblocks/98_scanner"/>
   </DirectoryHotList>
   <Viewer>
