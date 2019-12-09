@@ -418,7 +418,7 @@
     <DateTimeFormat>yyyy.mm.dd hh:mm:ss</DateTimeFormat>
     <CutTextToColumnWidth>True</CutTextToColumnWidth>
     <ExtendCellWidth>False</ExtendCellWidth>
-    <ShowSystemFiles>False</ShowSystemFiles>
+    <ShowSystemFiles>True</ShowSystemFiles>
     <ListFilesInThread>True</ListFilesInThread>
     <LoadIconsSeparately>True</LoadIconsSeparately>
     <DelayLoadingTabs>True</DelayLoadingTabs>
@@ -428,14 +428,14 @@
   </Behaviours>
   <Tools>
     <Viewer Enabled="True">
-      <Path>LD_PRELOAD=/usr/lib/libpython3.so gvim -O</Path>
-      <Parameters/>
+      <Path>nvim</Path>
+      <Parameters>-O</Parameters>
       <RunInTerminal>True</RunInTerminal>
       <KeepTerminalOpen>False</KeepTerminalOpen>
     </Viewer>
     <Editor Enabled="True">
-      <Path>LD_PRELOAD=/usr/lib/libpython3.so gvim -O</Path>
-      <Parameters/>
+      <Path>nvim</Path>
+      <Parameters>-O</Parameters>
       <RunInTerminal>True</RunInTerminal>
       <KeepTerminalOpen>False</KeepTerminalOpen>
     </Editor>
