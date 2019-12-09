@@ -9,8 +9,10 @@ export PIPENV_VENV_IN_PROJECT=true
 # using a C extension
 # https://vi.stackexchange.com/a/9918/8580
 # Calls to has('python') will fail
-alias vim='LD_PRELOAD=/usr/lib/libpython3.so vim'
-alias gvim='LD_PRELOAD=/usr/lib/libpython3.so gvim'
+# alias vim='LD_PRELOAD=/usr/lib/libpython3.so vim'
+# alias gvim='LD_PRELOAD=/usr/lib/libpython3.so gvim'
+alias vim='nvim'
+alias vi='nvim'
 
 # find files with grep feature
 alias ff='find . -type f | ag -i'
