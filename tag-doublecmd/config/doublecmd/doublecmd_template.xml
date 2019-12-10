@@ -2,7 +2,7 @@
 <doublecmd DCVersion="0.9.6 beta" ConfigVersion="10">
   <Configuration Save="True" SortOrder="0" TreeType="0">
     <UseConfigInProgramDir>False</UseConfigInProgramDir>
-    <FolderTabs Save="False"/>
+    <FolderTabs Save="True"/>
   </Configuration>
   <Colors>
     <FileFilters>
@@ -300,16 +300,16 @@
         </Program>
         <Program>
           <ID>{17596838-70C4-4D79-8EA0-FCB4A38BBB08}</ID>
-          <Icon>/usr/share/icons/Vertex-Maia/apps/48x48/apps/gvim.svg</Icon>
-          <Hint>GVim</Hint>
+          <Icon>/usr/share/icons/Numix-Circle/48/apps/neovim.svg</Icon>
+          <Hint>neovim</Hint>
           <Command>xfce4-terminal</Command>
-          <Params>-e '/bin/zsh -c "LD_PRELOAD=/usr/lib/libpython3.so gvim -geom 200x80 -O %p"'</Params>
+          <Params>-e '/bin/zsh -c "nvim -O %p"'</Params>
         </Program>
       </Row>
     </MainToolbar>
   </Toolbars>
   <MainWindow>
-    <Position Save="False">
+    <Position Save="True">
       <Maximized>False</Maximized>
       <Splitter>50</Splitter>
       <Left>4776</Left>
@@ -638,7 +638,7 @@
     <Options>1023</Options>
   </Log>
   <History>
-    <SearchReplaceHistory Save="False"/>
+    <SearchReplaceHistory Save="True"/>
     <DirHistory Save="False"/>
     <CmdLineHistory Save="False"/>
     <FileMaskHistory Save="False"/>
