@@ -1,0 +1,51 @@
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore.global
+    autocrlf = input
+    pager = less -F -X
+
+[color]
+    ui = true
+
+[push]
+    default = simple
+
+[alias]
+    s = status -b -s
+    co = checkout
+    l = log --pretty=format:'%C(yellow)%h %C(red)%ad %C(cyan)%an%C(green)%d %Creset%s' --date=short --date=relative --graph
+    la = log --pretty=format:'%C(yellow)%h %C(red)%ad %C(cyan)%an%C(green)%d %Creset%s' --date=short --date=relative --graph --all
+    lh = log --pretty=format:'%C(yellow)%h %C(red)%ad %C(cyan)%an%C(green)%d %Creset%s' --date=short --date=relative --graph
+    bv = branch -avv
+    dd = difftool -d
+    review = push origin HEAD:refs/for/master
+    cl = clean -fxd -e .idea -e .env
+
+[diff]
+    tool = bcomp
+
+[credential]
+    helper = cache --timeout=3600
+
+[difftool]
+    bcomp = trustExitCode
+
+[difftool "bcomp"]
+    cmd = bcompare $LOCAL $REMOTE
+
+# The file .gitconfig.local included below allows to globally configure Git settings.
+# It's not an error if the file cannot be found.
+# Common use cases are:
+# - Configure author and committer name and email. Keep in mind Git won't allow commits unless it knows who you are.
+#   The user section looks like this:
+#   [user]
+#       name = <first name> <last name>
+#       email = < mail adress>
+# - Set custom aliases, e.g.
+#   [alias]
+#       review<user 1 and 2> = push origin HEAD:refs/for/master%r=<reviewer 1 mail address>,r=<reviewer 2 mail address>
+#       review<user 3> = push origin HEAD:refs/for/master%r=<reviewer 3 mail address>
+#
+# It's also possible to overwrite above global settings if you like (like the compare tool)
+[include]
+    path = ~/.gitconfig.local
