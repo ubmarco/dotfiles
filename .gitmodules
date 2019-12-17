@@ -37,3 +37,4 @@
 [submodule "vim_runtime/my_plugins/coc.nvim"]
 	path = vim_runtime/my_plugins/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+	branch = release
