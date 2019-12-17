@@ -28,3 +28,12 @@
 [submodule "vim_runtime/my_plugins/vim-gitgutter"]
 	path = vim_runtime/my_plugins/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim_runtime/my_plugins/vim-smoothie"]
+	path = vim_runtime/my_plugins/vim-smoothie
+	url = https://github.com/psliwka/vim-smoothie
+[submodule "vim_runtime/my_plugins/vista.vim"]
+	path = vim_runtime/my_plugins/vista.vim
+	url = https://github.com/liuchengxu/vista.vim
+[submodule "vim_runtime/my_plugins/coc.nvim"]
+	path = vim_runtime/my_plugins/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
