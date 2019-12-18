@@ -47,6 +47,13 @@ endif
 " File type based dispatch
 autocmd FileType rst let b:dispatch = 'cd docs && sphinx-build -W -b html . _build/html'
 
+" Set plantuml path for plantuml-previewer.vim
+autocmd FileType plantuml let g:plantuml_previewer#plantuml_jar_path = get(
+    \  matchlist(system('cat `which plantuml` | grep plantuml.jar'), '\v.*\s[''"]?(\S+plantuml\.jar).*'),
+    \  1,
+    \  0
+    \)
+
 " F4 saves the file and runs silent Dispatch
 map <F4> <ESC>:w<CR>:Dispatch!<CR>
 
