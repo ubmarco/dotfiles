@@ -69,3 +69,10 @@ cnoremap >s/ >smagic/
 nnoremap :g/ :g/\v
 nnoremap :g// :g//
 
+" use CTRL+PageUp/PageDown to cycle through buffers
+map <C-PageUp> :bp<CR>
+map <C-PageDown> :bn<CR>
+
+" use PageUp/PageDown to react like Ctrl-U/Ctrl-D
+map <PageUp> <C-U>
+map <PageDown> <C-D>
