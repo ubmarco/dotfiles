@@ -83,3 +83,14 @@ map <C-PageDown> :bn<CR>
 " use PageUp/PageDown to react like Ctrl-U/Ctrl-D
 map <PageUp> <C-U>
 map <PageDown> <C-D>
+
+" EasyGrep options
+let g:EasyGrepCommand="ag"
+
+" Specify the behavior when switching between buffers
+" This removes the additional newtab option from ultimate vimrc default
+try
+  set switchbuf=useopen,usetab
+  set stal=2
+catch
+endtry

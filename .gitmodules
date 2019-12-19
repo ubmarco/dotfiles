@@ -38,3 +38,6 @@
 	path = vim_runtime/my_plugins/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
 	branch = release
+[submodule "vim_runtime/my_plugins/vim-easygrep"]
+	path = vim_runtime/my_plugins/vim-easygrep
+	url = https://github.com/dkprice/vim-easygrep
