@@ -9,6 +9,10 @@ set number
 hi Search ctermbg=Yellow
 hi Search ctermfg=Red
 
+" Hit enter to disable search highlight
+" Navigating down is done using j anyway
+map <silent> <cr> :noh<cr>
+
 " set file types
 autocmd BufNewFile,BufRead *.pkg set filetype=xml
 
