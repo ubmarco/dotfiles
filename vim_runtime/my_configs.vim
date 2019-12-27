@@ -87,7 +87,9 @@ nnoremap :g// :g//
 
 " use CTRL+PageUp/PageDown to cycle through buffers
 map <C-PageUp> :bp<CR>
+imap <C-PageUp> <ESC>:bp<CR>
 map <C-PageDown> :bn<CR>
+imap <C-PageDown> <ESC>:bn<CR>
 
 " use PageUp/PageDown to react like Ctrl-U/Ctrl-D
 map <PageUp> <C-U>
