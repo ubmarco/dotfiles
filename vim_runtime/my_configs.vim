@@ -29,7 +29,7 @@ let g:fastfold_fold_command_suffixes = []
 " let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
 
 " map Alt + arrow keys to resize the current window
-
+nnoremap <silent> <M-Up> :exe "resize " . (winheight(0) * 5/4)<CR>
 nnoremap <silent> <M-Down> :exe "resize " . (winheight(0) * 4/5)<CR>
 nnoremap <silent> <M-Right> :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
 nnoremap <silent> <M-Left> :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
