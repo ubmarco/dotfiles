@@ -105,3 +105,6 @@ try
   set stal=2
 catch
 endtry
+
+" Open Nerdtree on Vim start and go back to window
+autocmd VimEnter * NERDTree | wincmd p
