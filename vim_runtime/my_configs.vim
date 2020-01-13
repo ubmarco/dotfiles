@@ -108,3 +108,7 @@ endtry
 
 " Open Nerdtree on Vim start and go back to window
 autocmd VimEnter * NERDTree | wincmd p
+
+" Fix indentation problem for lists in RST files
+" See here https://vi.stackexchange.com/q/16190
+autocmd FileType rst set formatoptions+=n
