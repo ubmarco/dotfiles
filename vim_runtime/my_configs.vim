@@ -112,3 +112,12 @@ autocmd VimEnter * NERDTree | wincmd p
 " Fix indentation problem for lists in RST files
 " See here https://vi.stackexchange.com/q/16190
 autocmd FileType rst set formatoptions+=n
+
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType c,cpp,python,rst,plantuml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
