@@ -113,6 +113,8 @@ autocmd VimEnter * NERDTree | wincmd p
 " See here https://vi.stackexchange.com/q/16190
 autocmd FileType rst set formatoptions+=n
 
+" Remove trailing whitespaces
+" Solution from https://stackoverflow.com/a/1618401
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")
@@ -121,3 +123,8 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd FileType c,cpp,python,rst,plantuml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+" CtrlP ignore settings
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]_build$',
+  \ }
