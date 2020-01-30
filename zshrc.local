@@ -19,3 +19,8 @@ alias ff='find . -type f | ag -i'
 
 # exit like in vim
 alias :q='exit'
+
+# open files with system editor
+#
+# # open files with system editor
+alias xo='xdg-open'
