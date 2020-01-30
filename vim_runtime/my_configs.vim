@@ -119,7 +119,7 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd FileType c,cpp,python,rst,plantuml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType c,cpp,python,rst,plantuml,yaml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 " CtrlP ignore settings
 let g:ctrlp_custom_ignore = {
