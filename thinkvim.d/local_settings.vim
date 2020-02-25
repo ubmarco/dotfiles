@@ -1,6 +1,9 @@
 " set file types
 autocmd BufNewFile,BufRead *.pkg set filetype=xml
 
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
+
 " folding
 au FileType json setlocal foldmethod=syntax
 
