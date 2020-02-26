@@ -1,3 +1,6 @@
+" Set 7 lines to the cursor - when moving vertically using j/k
+set so=7
+
 " set file types
 autocmd BufNewFile,BufRead *.pkg set filetype=xml
 
@@ -53,10 +56,10 @@ nnoremap :g/ :g/\v
 nnoremap :g// :g//
 
 " use CTRL+PageUp/PageDown to cycle through buffers
-map <C-PageUp> :bn<CR>
-imap <C-PageUp> <ESC>:bn<CR>
-map <C-PageDown> :bp<CR>
-imap <C-PageDown> <ESC>:bp<CR>
+map <C-PageDown> :bn<CR>
+imap <C-PageDown> <ESC>:bn<CR>
+map <C-PageUP> :bp<CR>
+imap <C-PageUp> <ESC>:bp<CR>
 
 " use PageUp/PageDown to react like Ctrl-U/Ctrl-D
 map <PageUp> <C-U>
