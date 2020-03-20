@@ -1,5 +1,7 @@
 - repo: terryma/vim-multiple-cursors
   lazy: 0
-- repo:  Konfekt/FastFold
+- repo: Konfekt/FastFold
+  lazy: 0
+- repo: tpope/vim-fugitive
   lazy: 0
 
