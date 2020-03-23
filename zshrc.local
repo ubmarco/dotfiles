@@ -24,3 +24,19 @@ alias :q='exit'
 #
 # # open files with system editor
 alias xo='xdg-open'
+
+# fzf search packages (fp==find package)
+# you may add one ore more query options with a space,
+# the options are directly added to 'pacman -Qq', so reasonable examples are
+# fp    -- find all packages
+# fp d  -- List packages installed as dependencies
+# fp e  -- List packages explicitly installed
+# fp g  -- View all members of a package group
+# fp m  -- List installed packages not found in sync db(s)
+# fp n  -- List installed packages found in sync dbs)(
+# fp t  -- List packages not required by any package
+# fp u  -- List packages that can be upgraded
+# fp me -- List explicitly installed external (AUR) packages
+fp() {
+        pacman -Qq$1 | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+}
