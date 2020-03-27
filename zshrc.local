@@ -37,5 +37,9 @@ alias xo='xdg-open'
 # fp me -- Combination example: list external (AUR) packages (explicitly installed)
 # fp md -- Combination example: list external (AUR) packages (installed as dependencies)
 fp() {
-        pacman -Qq$1 | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+    pacman -Qq$1 | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
 }
+
+# use an improved, syntax highlighting version of cat
+alias cat='bat -pp'
+
