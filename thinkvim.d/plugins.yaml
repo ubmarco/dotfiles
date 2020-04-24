@@ -2,8 +2,6 @@
   lazy: 0
 - repo: Konfekt/FastFold
   lazy: 0
-- repo: tpope/vim-fugitive
-  lazy: 0
 - repo: m42e/arxml.vim
   lazy: 0
 - repo: dkprice/vim-easygrep
