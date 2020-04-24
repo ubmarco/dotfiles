@@ -97,6 +97,9 @@ function! VisualSelection(direction, extra_filter) range
     let @" = l:saved_reg
 endfunction
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Startify
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let s:footer = [
     \ '               _._',
     \ '           __.{,_.).__',
@@ -123,3 +126,10 @@ let s:header = [
 
 let g:startify_custom_header = Thinkvim_startify_center(s:header)
 let g:startify_custom_footer = Thinkvim_startify_center(s:footer)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Spaceline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" override default separator as slant types are drawn wrong
+let g:spaceline_seperate_style = 'arrow'
+
