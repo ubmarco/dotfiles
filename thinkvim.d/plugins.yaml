@@ -6,3 +6,5 @@
   lazy: 0
 - repo: dkprice/vim-easygrep
   lazy: 0
+- repo: tpope/vim-scriptease
+  lazy: 0
