@@ -43,3 +43,7 @@ fp() {
 # use an improved, syntax highlighting version of cat
 alias cat='bat -pp'
 
+# use alias also for sudo
+# see here https://askubuntu.com/a/22043
+alias sudo='sudo '
+
