@@ -96,3 +96,30 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+let s:footer = [
+    \ '               _._',
+    \ '           __.{,_.).__',
+    \ '        .-"           "-.',
+    \ '      .''  __.........__  ''.',
+    \ '     /.-''`___.......___`''-.\',
+    \ '    /_.-''` /   \ /   \ `''-._\',
+    \ '    |     |   ''/ \''   |     |',
+    \ '    |      ''-''     ''-''      |',
+    \ '    ;                       ;',
+    \ '    _\         ___         /_',
+    \ '   /  ''.''-.__  ___  __.-''.''  \',
+    \ ' _/_    `''-..._____...-''`    _\_',
+    \ '/   \           .           /   \',
+    \ '\____)         .           (____/',
+    \ '    \___________.___________/',
+    \ '      \___________________/',
+    \ '     (_____________________)',
+    \ '  "I''m not fat, I''m big boned!"',
+    \ ]
+let s:header = [
+    \ '        [ team useblocks ]',
+    \ ]
+
+let g:startify_custom_header = Thinkvim_startify_center(s:header)
+let g:startify_custom_footer = Thinkvim_startify_center(s:footer)
