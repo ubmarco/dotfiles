@@ -133,7 +133,7 @@ let g:spaceline_seperate_style = 'arrow'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc-prettier
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
+" command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimsepctor
