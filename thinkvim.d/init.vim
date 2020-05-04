@@ -44,9 +44,6 @@ autocmd FileType plantuml let g:plantuml_previewer#plantuml_jar_path = get(
 " highlight ColorColumn ctermbg=236 guibg=gray21
 " autocmd FileType gitcommit set colorcolumn=50
 
-" shortcut to toggle fold
-map <F5> za
-
 " very magic persistent search
 nnoremap / /\v
 vnoremap / /\v
@@ -132,4 +129,25 @@ let g:startify_custom_footer = Thinkvim_startify_center(s:footer)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " override default separator as slant types are drawn wrong
 let g:spaceline_seperate_style = 'arrow'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc-prettier
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vimsepctor
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Below mappings might be reactivated once Vimspector works without issues
+" let g:vimspector_enable_mappings = 'HUMAN'
+" nmap <F9>     <Plug>VimspectorContinue
+" nmap <F3>     <Plug>VimspectorStop
+" nmap <F4>     <Plug>VimspectorRestart
+" nmap <F6>     <Plug>VimspectorPause
+" nmap <F5>     <Plug>VimspectorToggleBreakpoint
+" nmap <F6>     <Plug>VimspectorAddFunctionBreakpoint
+" nmap <F8>     <Plug>VimspectorStepOver
+" nmap <F7>     <Plug>VimspectorStepInto
+" nmap <S-F8>   <Plug>VimspectorStepOut
+" packadd! vimspector
 
