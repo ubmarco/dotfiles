@@ -1,5 +1,5 @@
 [core]
-    editor = vim
+    editor = nvim
     excludesfile = ~/.gitignore.global
     autocrlf = input
     pager = less -F -X
