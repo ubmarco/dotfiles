@@ -42,7 +42,7 @@ let g:fastfold_fold_command_suffixes = []
 " let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
 
 """"""""""""""""""""""""""""""
-" => UI keymaps
+" => keymaps
 """"""""""""""""""""""""""""""
 " map Alt + arrow keys to resize the current window
 nnoremap <silent> <M-Up> :exe "resize +5"<CR>
@@ -67,6 +67,9 @@ cnoremap %s/ %smagic/
 cnoremap >s/ >smagic/
 nnoremap :g/ :g/\v
 nnoremap :g// :g//
+
+" show available key maps for buffer
+nmap <LocalLeader>h :map <buffer><CR>
 
 """"""""""""""""""""""""""""""
 " => Misc
