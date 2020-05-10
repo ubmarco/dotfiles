@@ -12,3 +12,5 @@
   lazy: 0
 - repo: tyru/open-browser.vim
   lazy: 0
+- repo: aklt/plantuml-syntax
+  lazy: 0
