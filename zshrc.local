@@ -15,7 +15,7 @@ alias vim='nvim'
 alias vi='nvim'
 
 # find files with grep feature
-alias ff='find . -type f | ag -i'
+alias ff='rg --files | rg -S'
 
 # exit like in vim
 alias :q='exit'
