@@ -8,6 +8,11 @@ set so=7
 " the default (1000) showed problems with riv.vim for RST files
 set maxmempattern=2000
 
+" colorcolumn
+autocmd FileType python,rst,vim set colorcolumn=120
+autocmd FileType gitcommit set colorcolumn=50
+autocmd ColorScheme PaperColor highlight ColorColumn ctermbg=236 guibg=gray15
+
 """"""""""""""""""""""""""""""
 " => File types
 """"""""""""""""""""""""""""""
@@ -80,12 +85,6 @@ nmap <LocalLeader>h :map <buffer><CR>
 """"""""""""""""""""""""""""""
 " ALE config
 let g:ale_linters = {'python': ['flake8', 'pylint']}
-
-" colorcolumn
-" au FileType python,rst set colorcolumn=120
-" highlight ColorColumn ctermbg=236 guibg=gray21
-" autocmd FileType gitcommit set colorcolumn=50
-
 
 """"""""""""""""""""""""""""""
 " => Visual mode in-buffer searching
