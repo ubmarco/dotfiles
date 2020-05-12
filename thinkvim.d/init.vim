@@ -4,6 +4,10 @@
 " Scroll if only 7 lines are left to the top/bottom - when moving vertically using j/k
 set so=7
 
+" maximum memory for pattern matching (2MB)
+" the default (1000) showed problems with riv.vim for RST files
+set maxmempattern=2000
+
 """"""""""""""""""""""""""""""
 " => File types
 """"""""""""""""""""""""""""""
