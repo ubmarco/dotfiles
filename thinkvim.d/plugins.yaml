@@ -9,7 +9,6 @@
 - repo: tpope/vim-scriptease
   lazy: 0
 - repo: weirongxu/plantuml-previewer.vim
-  rev: 994689a
   lazy: 0
 - repo: tyru/open-browser.vim
   lazy: 0
