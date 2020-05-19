@@ -80,6 +80,11 @@ nnoremap :g// :g//
 " show available key maps for buffer
 nmap <LocalLeader>h :map <buffer><CR>
 
+" <leader>cff formats the whole file instead of the selection which is
+" <leader>cf in thinkvim and which does not work with black
+""
+vmap <Leader>cff  :Format<CR>
+nmap <Leader>cff  :Format<CR>
 
 """"""""""""""""""""""""""""""
 " => Visual mode in-buffer searching
