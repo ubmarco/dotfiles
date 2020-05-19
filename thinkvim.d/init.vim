@@ -80,11 +80,6 @@ nnoremap :g// :g//
 " show available key maps for buffer
 nmap <LocalLeader>h :map <buffer><CR>
 
-""""""""""""""""""""""""""""""
-" => Misc
-""""""""""""""""""""""""""""""
-" ALE config
-let g:ale_linters = {'python': ['flake8', 'pylint']}
 
 """"""""""""""""""""""""""""""
 " => Visual mode in-buffer searching
