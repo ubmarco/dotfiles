@@ -89,6 +89,9 @@ nmap <Leader>cff  :Format<CR>
 " auto-save if vim window loses focus
 autocmd FocusLost * silent! wa
 
+" Exit enter mode in terminal
+:tnoremap <Esc> <C-\><C-n>
+
 """"""""""""""""""""""""""""""
 " => Visual mode in-buffer searching
 """"""""""""""""""""""""""""""
