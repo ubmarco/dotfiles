@@ -86,6 +86,9 @@ nmap <LocalLeader>h :map <buffer><CR>
 vmap <Leader>cff  :Format<CR>
 nmap <Leader>cff  :Format<CR>
 
+" auto-save if vim window loses focus
+autocmd FocusLost * silent! wa
+
 """"""""""""""""""""""""""""""
 " => Visual mode in-buffer searching
 """"""""""""""""""""""""""""""
