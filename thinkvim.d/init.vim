@@ -6,7 +6,7 @@ set so=7
 
 " maximum memory for pattern matching (2MB)
 " the default (1000) showed problems with riv.vim for RST files
-set maxmempattern=2000
+set maxmempattern=4000
 
 " colorcolumn
 autocmd FileType python,rst,vim set colorcolumn=120
