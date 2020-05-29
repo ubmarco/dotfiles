@@ -92,6 +92,9 @@ autocmd FocusLost * silent! wa
 " Exit enter mode in terminal
 :tnoremap <Esc> <C-\><C-n>
 
+" defx set global current working directory
+autocmd FileType defx nmap <buffer><expr> W     defx#do_action('change_vim_cwd')
+
 """"""""""""""""""""""""""""""
 " => Visual mode in-buffer searching
 """"""""""""""""""""""""""""""
