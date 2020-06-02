@@ -19,6 +19,7 @@ autocmd ColorScheme PaperColor highlight ColorColumn ctermbg=236 guibg=gray15
 " set file types
 autocmd BufNewFile,BufRead *.pkg set filetype=xml
 autocmd BufNewFile,BufRead *.dvgroovy set filetype=groovy
+autocmd FileType vue set expandtab
 
 " Fix indentation problem for lists in RST files
 " See here https://vi.stackexchange.com/q/16190
