@@ -28,3 +28,6 @@
   lazy: 0
 - repo: NLKNguyen/papercolor-theme
   lazy: 0
+- repo: puremourning/vimspector
+  lazy: 0
+  merged: 0
