@@ -48,3 +48,5 @@ alias cat='bat -pp'
 # see here https://askubuntu.com/a/22043
 alias sudo='sudo '
 
+# always use colors for tree, also when piping (e.g. to less)
+alias tree='tree -C'
