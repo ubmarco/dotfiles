@@ -16,3 +16,15 @@
   lazy: 0
 - repo: gu-fan/riv.vim
   lazy: 0
+- repo: gu-fan/InstantRst
+  lazy: 0
+- repo: tpope/vim-projectionist
+  lazy: 0
+- repo: tpope/vim-dispatch
+  lazy: 0
+- repo: alfredodeza/pytest.vim
+  lazy: 0
+- repo: posva/vim-vue
+  lazy: 0
+- repo: NLKNguyen/papercolor-theme
+  lazy: 0
