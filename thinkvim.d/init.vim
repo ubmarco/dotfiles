@@ -164,7 +164,6 @@ nmap <F7>     <Plug>VimspectorStepInto
 nmap <F8>     <Plug>VimspectorStepOver
 nmap <F9>     <Plug>VimspectorContinue
 nmap <S-F8>   <Plug>VimspectorStepOut
-packadd! vimspector
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spaceline
