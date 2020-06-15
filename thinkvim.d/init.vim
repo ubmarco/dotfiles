@@ -148,8 +148,8 @@ let s:header = [
     \ '        [ team useblocks ]',
     \ ]
 
-let g:startify_custom_header = Thinkvim_startify_center(s:header)
-let g:startify_custom_footer = Thinkvim_startify_center(s:footer)
+let g:dashboard_custom_header = s:header
+let g:dashboard_custom_footer = s:footer
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimsepctor
