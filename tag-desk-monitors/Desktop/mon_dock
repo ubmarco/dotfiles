@@ -10,7 +10,7 @@ lspci
 xrandr --output eDP1 --mode 1920x1080 --pos 0x977 --output DP1 --mode 2560x1440 --primary --pos 1920x0 --output HDMI2 --mode 2560x1440 --pos 4480x0
 
 # Set panel to primary monitor (right)
-sh ~/Desktop/pan_prim.sh
+sh ~/Desktop/pan_prim
 
 # Wait a while until dock sound device is ready
 sleep 15s

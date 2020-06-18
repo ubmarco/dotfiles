@@ -7,4 +7,4 @@
 xrandr --output eDP1 --mode 1920x1080 --pos 0x699 --output DP1 --off --output HDMI2 --mode 1920x1080 --pos 1920x0 --primary
 
 # Set panel to primary monitor
-sh ~/Desktop/pan_prim.sh
+sh ~/Desktop/pan_prim
