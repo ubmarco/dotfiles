@@ -188,5 +188,5 @@ let g:spaceline_scroll_bar_chars = [
 " deactivate setting conceallevel and concealcursor by the plugin
 let g:indentLine_setConceal = 0
 " keep concealed character width (line don't jump horizontally)
-autocmd FileType json setlocal conceallevel=1
+autocmd FileType json setlocal conceallevel=0
 
