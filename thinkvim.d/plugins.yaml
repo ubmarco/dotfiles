@@ -31,3 +31,5 @@
 - repo: puremourning/vimspector
   lazy: 0
   merged: 0
+- repo: cespare/vim-toml
+  lazy: 0
