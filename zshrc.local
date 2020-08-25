@@ -50,3 +50,8 @@ alias sudo='sudo '
 
 # always use colors for tree, also when piping (e.g. to less)
 alias tree='tree -C'
+
+# load zshrc user file not residing in Ansible managed dotfiles repo
+zshrc_user="$HOME/.zshrc.user"
+if test -r $zshrc_user -a -f $zshrc_user;then source $zshrc_user; fi
+
