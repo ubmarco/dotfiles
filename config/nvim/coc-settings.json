@@ -1,3 +1,9 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "javascript"]
+  "python.autoUpdateLanguageServer": true,
+  "python.jediEnabled": false,
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "coc.preferences.formatOnSaveFiletypes": ["python", "json", "puml"]
 }
