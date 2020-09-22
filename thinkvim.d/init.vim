@@ -87,6 +87,10 @@ nmap <LocalLeader>h :map <buffer><CR>
 vmap <Leader>cff  :Format<CR>
 nmap <Leader>cff  :Format<CR>
 
+" toggle wrapping
+vmap <Leader>tw  :set wrap!<CR>
+nmap <Leader>tw  :set wrap!<CR>
+
 " auto-save if vim window loses focus
 autocmd FocusLost * silent! wa
 
