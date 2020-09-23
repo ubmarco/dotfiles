@@ -194,3 +194,8 @@ let g:indentLine_setConceal = 0
 " keep concealed character width (line don't jump horizontally)
 autocmd FileType json setlocal conceallevel=0
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Goyo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" increase line width (default is 80)
+let g:goyo_width = 125
