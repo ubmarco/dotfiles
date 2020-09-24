@@ -99,6 +99,7 @@ autocmd FocusLost * silent! wa
 
 " defx set global current working directory
 autocmd FileType defx nmap <buffer><expr> W     defx#do_action('change_vim_cwd')
+autocmd FileType defx nmap <buffer><expr> b     defx#do_action('execute_command', ['bcompare *', 'async'])
 
 """"""""""""""""""""""""""""""
 " => Visual mode in-buffer searching
