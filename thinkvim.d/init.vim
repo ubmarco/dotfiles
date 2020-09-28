@@ -93,11 +93,19 @@ nmap <Leader>cff  :Format<CR>
 vmap <Leader>tw  :set wrap!<CR>
 nmap <Leader>tw  :set wrap!<CR>
 
+" toggle terminal
+nmap <Leader>tt :<C-u>vs<CR><bar>:terminal<CR><bar>:startinsert<CR>direnv reload<CR>
+
 " auto-save if vim window loses focus
 autocmd FocusLost * silent! wa
 
 " Exit enter mode in terminal
-:tnoremap <Esc> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n>
+" Navigate windows even when inserting in terminal
+tmap <C-h> <ESC><C-w>h
+tmap <C-l> <ESC><C-w>l
+tmap <C-j> <ESC><C-w>j
+tmap <C-k> <ESC><C-w>k
 
 " defx set global current working directory
 autocmd FileType defx nmap <buffer><expr> W     defx#do_action('change_vim_cwd')
