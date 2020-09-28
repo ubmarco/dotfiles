@@ -35,6 +35,8 @@ autocmd FileType plantuml let g:plantuml_previewer#plantuml_jar_path = get(
     \  0
     \)
 
+" Auto insert mode on switch to terminal
+autocmd BufEnter * if &buftype=="terminal" | startinsert | endif
 """"""""""""""""""""""""""""""
 " => Folding
 """"""""""""""""""""""""""""""
