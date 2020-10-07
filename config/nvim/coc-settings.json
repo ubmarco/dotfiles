@@ -13,5 +13,10 @@
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
   "python.linting.flake8Args": ["--max-line-length=120"],
-  "coc.preferences.formatOnSaveFiletypes": ["python", "json", "puml"]
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "json",
+    "puml",
+    "javascript"
+  ]
 }
