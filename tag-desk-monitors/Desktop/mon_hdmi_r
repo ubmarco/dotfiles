@@ -8,3 +8,7 @@ xrandr --output eDP1 --mode 1920x1080 --pos 0x699 --output DP1 --off --output HD
 
 # Load panel config
 xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/hdmi_r.tar.bz2
+
+# Arrange desktop icons
+xfdesktop -A
+
