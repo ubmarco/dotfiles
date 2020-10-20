@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="0.9.6 beta" ConfigVersion="10">
+<doublecmd DCVersion="0.9.9 beta" ConfigVersion="10">
   <Configuration Save="True" SortOrder="0" TreeType="0">
     <UseConfigInProgramDir>False</UseConfigInProgramDir>
     <FolderTabs Save="True"/>
@@ -575,6 +575,8 @@
       </Columns>
     </BriefView>
     <ExtraLineSpan>2</ExtraLineSpan>
+    <FolderPrefix>[</FolderPrefix>
+    <FolderPostfix>]</FolderPostfix>
   </FilesViews>
   <Keyboard>
     <Typing>
@@ -1038,4 +1040,11 @@
       </Preset>
     </Presets>
   </MultiRenamePresets>
+  <Differ>
+    <Colors>
+      <Added>11206570</Added>
+      <Deleted>11184895</Deleted>
+      <Modified>16755370</Modified>
+    </Colors>
+  </Differ>
 </doublecmd>
