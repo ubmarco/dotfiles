@@ -1,10 +1,17 @@
 #!/bin/sh
 
 # activate only laptop + right 1080p monitor
-# eDP1 laptop
-# DP1 off
-# HDMI2 right
-xrandr --output eDP1 --mode 1920x1080 --pos 0x699 --output DP1 --off --output HDMI2 --mode 1920x1080 --pos 1920x0 --primary
+
+if hostname | grep "tux05"; then
+	# special handling of Lenovo E420s
+	# LVDS1 laptop
+	xrandr --output HDMI1 --mode 1920x1080 --pos 1366x0 --primary --output LVDS1 --mode 1366x768 --pos 0x774
+else
+	# Tuxedo
+	# eDP1 laptop
+	# DP1 display port
+	xrandr --output eDP1 --mode 1920x1080 --pos 0x699 --output DP1 --off --output HDMI2 --mode 1920x1080 --pos 1920x0 --primary
+fi
 
 # Load panel config
 xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/hdmi_r.tar.bz2
