@@ -1,3 +1,2 @@
-EXCLUDES="*:README.rst *:LICENSE *:unlinked"
-UNDOTTED="*:Desktop *:backup*.sh"
-SYMLINK_DIRS="vim_runtime/my_plugins/*"
+EXCLUDES="README.rst LICENSE unlinked"
+UNDOTTED="Desktop backup*.sh"
