@@ -300,7 +300,7 @@
         </Program>
         <Program>
           <ID>{17596838-70C4-4D79-8EA0-FCB4A38BBB08}</ID>
-          <Icon>/usr/share/icons/Numix-Circle/48/apps/neovim.svg</Icon>
+          <Icon>/usr/share/app-info/icons/archlinux-arch-community/64x64/neovim_nvim.png</Icon>
           <Hint>neovim</Hint>
           <Command>xfce4-terminal</Command>
           <Params>-e '/bin/zsh -c "nvim -O %p"'</Params>
@@ -709,12 +709,13 @@
     <HotDir Name="~ / Documents" Path="/home/marco/Documents"/>
     <HotDir Name="Nextcloud / c_level" Path="/home/marco/share_c_level"/>
     <HotDir Name="Nextcloud / project_files" Path="/home/marco/share_project_files"/>
+    <HotDir Name="Nextcloud / ub_int" Path="/home/marco/share_ub_int"/>
     <HotDir Name="~ /.local/share/Cryptomator/mnt/" Path="/home/marco/.local/share/Cryptomator/mnt"/>
     <HotDir Name="~/ bmw / git" Path="/home/marco/bmw/git"/>
     <HotDir Name="~/ bmw / svn" Path="/home/marco/bmw/svn"/>
     <HotDir Name="HAG_GSD / ... / GenComTestData" Path="/home/marco/bmw/svn/asc120/Projects/HAG_GSD/trunk/Tools/GenComTestData"/>
     <HotDir Name="HAG150AL / ... /  ECU-TEST / ... / Com" Path="/home/marco/bmw/svn/asc120/Projects/HAG150AL/trunk/Test/Config/LMV/ECU-TEST/Packages/Com/Messages"/>
-    <HotDir Name="/mnt/dlink_nas/useblocks/98_scanner/" Path="/mnt/dlink_nas/useblocks/98_scanner"/>
+    <HotDir Name="/ mnt / dlink_nas / 98_scanner" Path="/mnt/dlink_nas/98_scanner"/>
   </DirectoryHotList>
   <Viewer>
     <PreviewVisible>False</PreviewVisible>
