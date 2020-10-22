@@ -16,7 +16,7 @@ xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/dock.tar.bz2
 xfdesktop -A
 
 # Wait a while until dock sound device is ready
-sleep 15s
+sleep 10s
 
 # Set default audio sink to the dock station
 sh ~/.dotfiles/unlinked/set_audio_dock.sh
