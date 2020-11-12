@@ -42,7 +42,7 @@ fp() {
 }
 
 # use an improved, syntax highlighting version of cat
-alias cat='bat --tabs 2 -pp'
+alias cat='bat --tabs 2 --style=plain'
 
 # use alias also for sudo
 # see here https://askubuntu.com/a/22043
