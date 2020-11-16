@@ -18,6 +18,9 @@ alias vi='nvim'
 # find files with grep feature
 alias ff='rg --files --hidden --no-ignore | rg -S'
 
+# find in pdfs
+alias rgapdf='rga --rga-adapters=poppler'
+
 # exit like in vim
 alias :q='exit'
 
