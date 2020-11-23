@@ -1,7 +1,7 @@
 #!/bin/bash
 
 src="root@192.168.2.114:/storage/emulated/0/Music/"
-dst="/media/daten_fat32/Musik/music_mobile"
+dst="/media/daten_fat32/Musik/Music_OP5T"
 
 command_common="rsync -e 'sshpass -p admin ssh -p2222 -oKexAlgorithms=+diffie-hellman-group1-sha1' -hvrl --size-only --progress --delete --stats"
 command_dirs="${src} ${dst}"
