@@ -51,4 +51,5 @@
     "files.exclude": {
         "**/__pycache__": true
     },
+    "diffEditor.ignoreTrimWhitespace": false,
 }
