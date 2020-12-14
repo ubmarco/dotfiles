@@ -30,6 +30,7 @@
         "py38"
     ],
     "editor.formatOnSave": true,
+    "files.insertFinalNewline": true,
     "terminal.integrated.fontFamily": "Source Code Pro",
     "editor.fontFamily": "Source Code Pro",
     "autoDocstring.docstringFormat": "sphinx",
