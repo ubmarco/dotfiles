@@ -29,8 +29,6 @@
         "--target-version",
         "py38"
     ],
-    // "python.jediEnabled": true,
-    // "python.jediPath": "/home/marco/bmw/git/ascgit307.arxmlpatcher/.venv/lib/python3.7/site-packages/jedi/",
     "editor.formatOnSave": true,
     "terminal.integrated.fontFamily": "Source Code Pro",
     "editor.fontFamily": "Source Code Pro",
