@@ -1,27 +1,29 @@
 {
-    "files.autoSave": "afterDelay",
-    "files.associations": {
-        "*.arxml": "xml",
-        "*.spec": "python",
-    },
+    "autoDocstring.docstringFormat": "sphinx",
+    "C_Cpp.updateChannel": "Insiders",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontFamily": "Source Code Pro",
+    "editor.formatOnSave": true,
     "editor.largeFileOptimizations": false,
-    "xmlTools.enableXmlTreeViewCursorSync": true,
+    "editor.mouseWheelZoom": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.rulers": [
         120
     ],
-    "workbench.tree.indent": 16,
-    "workbench.tree.renderIndentGuides": "always",
-    "window.zoomLevel": 0,
-    "editor.mouseWheelZoom": true,
-    "window.titleBarStyle": "custom",
-    "restructuredtext.linter.extraArgs": [
-        "--max-line-length",
-        "120"
-    ],
-    "restructuredtext.linter.run": "onSave",
-    "restructuredtext.updateDelay": 5000,
-    "restructuredtext.updateOnTextChanged": "false",
+    "editor.wordWrapColumn": 120,
+    "files.associations": {
+        "*.arxml": "xml",
+        "*.spec": "python"
+    },
+    "files.autoSave": "afterDelay",
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "files.insertFinalNewline": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "importMagic.maxColumns": 120,
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "python.formatting.blackArgs": [
         "--line-length",
         "120",
@@ -29,26 +31,24 @@
         "--target-version",
         "py38"
     ],
-    "editor.formatOnSave": true,
-    "files.insertFinalNewline": true,
-    "terminal.integrated.fontFamily": "Source Code Pro",
-    "editor.fontFamily": "Source Code Pro",
-    "autoDocstring.docstringFormat": "sphinx",
     "python.formatting.provider": "yapf",
-    "editor.wordWrapColumn": 120,
+    "python.linting.mypyEnabled": true,
+    "python.pythonPath": ".venv/bin/python",
     "python.workspaceSymbols.exclusionPatterns": [
         "**/site-packages/**",
         ".venv"
     ],
-    "python.linting.mypyEnabled": true,
-    "C_Cpp.updateChannel": "Insiders",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    "importMagic.maxColumns": 120,
-    "python.defaultInterpreterPath": ".venv/bin/python",
-    "files.exclude": {
-        "**/__pycache__": true
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
+    "restructuredtext.linter.extraArgs": [
+        "--max-line-length",
+        "120"
+    ],
+    "restructuredtext.linter.run": "onSave",
+    "restructuredtext.updateDelay": 5000,
+    "restructuredtext.updateOnTextChanged": "false",
+    "terminal.integrated.fontFamily": "Source Code Pro",
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 0,
+    "workbench.tree.indent": 16,
+    "workbench.tree.renderIndentGuides": "always",
+    "xmlTools.enableXmlTreeViewCursorSync": true
 }
