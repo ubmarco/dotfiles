@@ -22,7 +22,7 @@
     bv = branch -avv
     dd = difftool -d
     review = push origin HEAD:refs/for/master
-    cl = clean -ffxd -e .idea -e .env
+    cl = clean -ffxd -e .idea -e .env -e .history -e .vscode
 
 [diff]
     tool = bcomp
