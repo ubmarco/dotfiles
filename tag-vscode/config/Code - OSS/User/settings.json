@@ -49,4 +49,6 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "xmlTools.enableXmlTreeViewCursorSync": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
 }
