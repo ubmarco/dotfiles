@@ -26,6 +26,8 @@
   "files.insertFinalNewline": true,
   "git.autofetch": true,
   "git.confirmSync": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
   "importMagic.maxColumns": 120,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "python.formatting.blackArgs": [
@@ -49,6 +51,4 @@
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "xmlTools.enableXmlTreeViewCursorSync": true,
-  "gitlens.currentLine.enabled": false,
-  "gitlens.hovers.currentLine.over": "line",
 }
