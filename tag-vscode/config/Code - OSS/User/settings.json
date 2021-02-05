@@ -24,7 +24,8 @@
   },
   "files.autoSave": "afterDelay",
   "files.exclude": {
-    "**/__pycache__": true
+    "**/__pycache__": true,
+    ".history": true
   },
   "files.insertFinalNewline": true,
   "git.autofetch": true,
