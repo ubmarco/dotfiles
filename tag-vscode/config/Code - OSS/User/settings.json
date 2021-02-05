@@ -9,6 +9,9 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.rulers": [120],
   "editor.wordWrapColumn": 120,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
