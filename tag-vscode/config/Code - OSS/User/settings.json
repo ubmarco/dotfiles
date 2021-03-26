@@ -21,6 +21,9 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "files.associations": {
     "*.arxml": "xml",
     "*.spec": "python"
@@ -29,14 +32,22 @@
   "files.exclude": {
     ".history/**": true,
     "**/__pycache__": true,
+    "**/.git": false
   },
   "files.insertFinalNewline": true,
   "git.autofetch": true,
   "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
+  "gitlens.views.commits.files.layout": "tree",
+  "gitlens.views.formats.commits.label": "${❰ tips ❱ ➤  }${id} ${message}",
   "importMagic.maxColumns": 120,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "local-history.daysLimit": 30,
+  "local-history.maxDisplay": 100,
+  "local-history.path": "~/.cache/vscode-history",
+  "local-history.saveDelay": 5,
   "python.formatting.blackArgs": [
     "--line-length",
     "120",
@@ -52,10 +63,14 @@
   "restructuredtext.linter.run": "onSave",
   "restructuredtext.updateDelay": 5000,
   "restructuredtext.updateOnTextChanged": "false",
+  "search.exclude": {
+    "**/.venv": true,
+    "**/docs/_build": true
+  },
   "terminal.integrated.fontFamily": "Source Code Pro",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": 0,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
-  "xmlTools.enableXmlTreeViewCursorSync": true,
+  "xmlTools.enableXmlTreeViewCursorSync": true
 }
