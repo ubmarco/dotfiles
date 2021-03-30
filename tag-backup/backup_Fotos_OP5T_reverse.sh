@@ -1,7 +1,7 @@
 #!/bin/bash
 
 src="/media/daten_fat32/Fotos/Fotos_OP5T/"
-dst="root@192.168.2.114:/storage/emulated/0/DCIM/"
+dst="root@192.168.2.103:/storage/emulated/0/DCIM/"
 
 command_common="rsync -e 'sshpass -p admin ssh -p2222 -oKexAlgorithms=+diffie-hellman-group1-sha1' -hvrl --size-only --progress --delete --stats --exclude=.thumbnails --exclude=thumbnails --exclude=.inflight_lowres"
 command_dirs="${src} ${dst}"
