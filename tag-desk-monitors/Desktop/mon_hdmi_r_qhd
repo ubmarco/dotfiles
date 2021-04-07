@@ -12,7 +12,7 @@ else
 	# Tuxedo
 	# eDP1 laptop
 	# DP1 display port
-	xrandr --output eDP1 --mode 1920x1080 --pos 0x699 --output DP1 --off --output HDMI2 --mode 2560x1440 --pos 1920x0 --primary
+	xrandr --output eDP1 --mode 1920x1080 --pos 0x980 --output DP1 --off --output HDMI2 --mode 2560x1440 --pos 1920x0 --primary
 fi
 
 # Load panel config
