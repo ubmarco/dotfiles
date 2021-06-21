@@ -24,6 +24,9 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[yaml]": {
+    "editor.rulers": [99]
+  },
   "files.associations": {
     "*.arxml": "xml",
     "*.spec": "python"
