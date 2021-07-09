@@ -25,7 +25,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
-    "editor.rulers": [99]
+    "editor.rulers": [99],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.associations": {
     "*.arxml": "xml",
