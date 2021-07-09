@@ -84,5 +84,14 @@
   "window.zoomLevel": 0,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
-  "xmlTools.enableXmlTreeViewCursorSync": true
+  "xmlTools.enableXmlTreeViewCursorSync": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "redhat.telemetry.enabled": false,
+  "yaml.customTags": [
+    "!GetAtt",
+    "!Join sequence",
+    "!encrypted/pkcs1-oaep scalar",
+    "!vault scalar"
+  ]
 }
