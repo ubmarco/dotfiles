@@ -1,5 +1,17 @@
 {
   "autoDocstring.docstringFormat": "sphinx",
+  "compareHelper.defaultExternalTools": {
+    "folders": "bcompare",
+    "images": "bcompare",
+    "text": "bcompare"
+  },
+  "compareHelper.externalTools": [
+    {
+      "name": "bcompare",
+      "path": "bcompare",
+      "compares": ["text", "folders", "images"]
+    }
+  ],
   "C_Cpp.updateChannel": "Insiders",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.fontFamily": "Source Code Pro",
@@ -8,26 +20,8 @@
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.rulers": [120],
+  "editor.suggestSelection": "first",
   "editor.wordWrapColumn": 120,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.rulers": [99],
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "files.associations": {
     "*.arxml": "xml",
     "*.spec": "python"
@@ -65,31 +59,46 @@
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": true,
+  "python.pythonPath": ".venv/bin/python",
   "python.testing.nosetestsEnabled": false,
   "python.testing.pytestArgs": ["tests"],
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
-  "python.pythonPath": ".venv/bin/python",
   "python.workspaceSymbols.exclusionPatterns": ["**/site-packages/**", ".venv"],
-  // "restructuredtext.linter.run": "onType",
-  // "restructuredtext.updateDelay": 2000,
-  // "restructuredtext.updateOnTextChanged": "false",
   "search.exclude": {
     "**/.venv": true,
     "**/docs/_build": true
   },
+  "redhat.telemetry.enabled": false,
   "terminal.integrated.fontFamily": "Source Code Pro",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.titleBarStyle": "custom",
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "xmlTools.enableXmlTreeViewCursorSync": true,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "redhat.telemetry.enabled": false,
   "yaml.customTags": [
     "!GetAtt",
     "!Join sequence",
     "!encrypted/pkcs1-oaep scalar",
     "!vault scalar"
-  ]
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.rulers": [99],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
