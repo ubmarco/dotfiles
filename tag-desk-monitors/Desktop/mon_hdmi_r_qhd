@@ -6,13 +6,13 @@ if hostname | grep "tux05"; then
 	# special handling of Lenovo E420s
 	# LVDS1 laptop
 	xrandr --newmode "2560x1440_40"  201.00  2560 2720 2984 3408  1440 1443 1448 1476 -hsync +vsync
-	xrandr --addmode HDMI1 2560x1440_40
-	xrandr --output HDMI1 --mode 2560x1440_400 --pos 1366x0 --primary --output LVDS1 --mode 1366x768 --pos 0x774
+	xrandr --addmode HDMI-1 2560x1440_40
+	xrandr --output HDMI-1 --mode 2560x1440_400 --pos 1366x0 --primary --output LVDS-1 --mode 1366x768 --pos 0x774
 else
 	# Tuxedo
 	# eDP1 laptop
 	# DP1 display port
-	xrandr --output eDP1 --mode 1920x1080 --pos 0x980 --output DP1 --off --output HDMI2 --mode 2560x1440 --pos 1920x0 --primary
+	xrandr --output eDP-1 --mode 1920x1080 --pos 0x980 --output DP-1 --off --output HDMI-2 --mode 2560x1440 --pos 1920x0 --primary
 fi
 
 # Load panel config

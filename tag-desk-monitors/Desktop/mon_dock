@@ -7,7 +7,7 @@ lspci
 # eDP1 laptop
 # DP1 middle monitor
 # HDMI2 right monitor
-xrandr --output eDP1 --mode 1920x1080 --pos 0x977 --output DP1 --mode 2560x1440 --primary --pos 1920x0 --output HDMI2 --mode 2560x1440 --pos 4480x0
+xrandr --output eDP-1 --mode 1920x1080 --pos 0x977 --output DP-1 --mode 2560x1440 --primary --pos 1920x0 --output HDMI-2 --mode 2560x1440 --pos 4480x0
 
 # Load panel config
 xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/dock.tar.bz2

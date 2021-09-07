@@ -5,12 +5,12 @@
 if hostname | grep "tux05"; then
 	# special handling of Lenovo E420s
 	# LVDS1 laptop
-	xrandr --output HDMI1 --off --output LVDS1 --mode 1366x768
+	xrandr --output HDMI-1 --off --output LVDS1 --mode 1366x768
 else
 	# Tuxedo
 	# eDP1 laptop
 	# DP1 display port
-	xrandr --output eDP1 --mode 1920x1080 --output DP1 --off --output HDMI2 --off
+	xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-2 --off
 fi
 
 # Load panel config
