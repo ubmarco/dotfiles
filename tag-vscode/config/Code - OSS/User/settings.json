@@ -69,6 +69,7 @@
     "**/.venv": true,
     "**/docs/_build": true
   },
+  "sort-imports.on-save": false,
   "redhat.telemetry.enabled": false,
   "terminal.integrated.fontFamily": "Source Code Pro",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
