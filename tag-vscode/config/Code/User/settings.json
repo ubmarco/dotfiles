@@ -1,0 +1,110 @@
+{
+  "autoDocstring.docstringFormat": "sphinx",
+  "compareHelper.defaultExternalTools": {
+    "folders": "bcompare",
+    "images": "bcompare",
+    "text": "bcompare"
+  },
+  "compareHelper.externalTools": [
+    {
+      "name": "bcompare",
+      "path": "bcompare",
+      "compares": ["text", "folders", "images"]
+    }
+  ],
+  "C_Cpp.updateChannel": "Insiders",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontFamily": "Source Code Pro",
+  "editor.formatOnSave": true,
+  "editor.largeFileOptimizations": false,
+  "editor.mouseWheelZoom": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.rulers": [120],
+  "editor.suggestSelection": "first",
+  "editor.wordWrapColumn": 120,
+  "files.associations": {
+    "*.arxml": "xml",
+    "*.spec": "python"
+  },
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    ".history/**": true,
+    "**/__pycache__": true,
+    "**/.git": false
+  },
+  "files.insertFinalNewline": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.suggestSmartCommit": false,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.views.commits.files.layout": "tree",
+  "gitlens.views.formats.commits.label": "${❰ tips ❱ ➤  }${id} ${message}",
+  "importMagic.maxColumns": 120,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "local-history.daysLimit": 30,
+  "local-history.maxDisplay": 100,
+  "local-history.path": "~/.cache/vscode-history",
+  "local-history.saveDelay": 5,
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "120",
+    "--skip-string-normalization",
+    "--experimental-string-processing",
+    "--target-version",
+    "py38"
+  ],
+  "python.formatting.provider": "black",
+  "python.languageServer": "Jedi",
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.pythonPath": ".venv/bin/python",
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestArgs": ["tests"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.workspaceSymbols.exclusionPatterns": ["**/site-packages/**", ".venv"],
+  "search.exclude": {
+    "**/.venv": true,
+    "**/docs/_build": true
+  },
+  "sort-imports.on-save": false,
+  "redhat.telemetry.enabled": false,
+  "terminal.integrated.fontFamily": "Source Code Pro",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.titleBarStyle": "custom",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "xmlTools.enableXmlTreeViewCursorSync": true,
+  "yaml.customTags": [
+    "!GetAtt",
+    "!Join sequence",
+    "!encrypted/pkcs1-oaep scalar",
+    "!vault scalar"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.rulers": [100]
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.rulers": [99],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
+}
