@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pactl set-card-profile bluez_card.70_BF_92_FB_D1_F5 a2dp-sink-aac
+sleep .3
+pactl set-default-sink bluez_output.70_BF_92_FB_D1_F5.a2dp-sink
