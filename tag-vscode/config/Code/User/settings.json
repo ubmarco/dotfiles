@@ -108,5 +108,8 @@
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active"
+  "editor.guides.bracketPairs": "active",
+  "json.schemas": [],
+  "aws.profile": "profile:ub_marco.heinemann",
+  "aws.sam.enableCodeLenses": false
 }
