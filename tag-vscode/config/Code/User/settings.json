@@ -106,5 +106,7 @@
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
-  }
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active"
 }
