@@ -1,5 +1,7 @@
 {
   "autoDocstring.docstringFormat": "sphinx",
+  "aws.profile": "profile:ub_marco.heinemann",
+  "aws.sam.enableCodeLenses": false,
   "compareHelper.defaultExternalTools": {
     "folders": "bcompare",
     "images": "bcompare",
@@ -14,8 +16,10 @@
   ],
   "C_Cpp.updateChannel": "Insiders",
   "diffEditor.ignoreTrimWhitespace": false,
+  "editor.bracketPairColorization.enabled": true,
   "editor.fontFamily": "Source Code Pro",
   "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
   "editor.largeFileOptimizations": false,
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -30,7 +34,11 @@
   "files.exclude": {
     ".history/**": true,
     "**/__pycache__": true,
-    "**/.git": false
+    "**/.git": false,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
   },
   "files.insertFinalNewline": true,
   "git.autofetch": true,
@@ -42,6 +50,7 @@
   "gitlens.views.formats.commits.label": "${❰ tips ❱ ➤  }${id} ${message}",
   "importMagic.maxColumns": 120,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.schemas": [],
   "local-history.daysLimit": 30,
   "local-history.maxDisplay": 100,
   "local-history.path": "~/.cache/vscode-history",
@@ -71,6 +80,13 @@
     "**/docs/_build": true
   },
   "sort-imports.on-save": false,
+  "spellright.language": ["en_US"],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "restructuredtext"
+  ],
   "redhat.telemetry.enabled": false,
   "terminal.integrated.fontFamily": "Source Code Pro",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -88,11 +104,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.rulers": [100]
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.rulers": [100],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    // "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.rulers": [100],
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -100,16 +117,14 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
   "[yaml]": {
     "editor.rulers": [99],
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "json.schemas": [],
-  "aws.profile": "profile:ub_marco.heinemann",
-  "aws.sam.enableCodeLenses": false
+  }
 }
