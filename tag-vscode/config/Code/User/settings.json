@@ -80,13 +80,17 @@
     "**/docs/_build": true
   },
   "sort-imports.on-save": false,
-  "spellright.language": ["en_US"],
   "spellright.documentTypes": [
     "markdown",
     "latex",
     "plaintext",
     "restructuredtext"
   ],
+  "spellright.language": ["en_US"],
+  "spellright.notificationClass": "warning",
+  "spellright.ignoreRegExpsByClass": {
+    "restructuredtext": [ "/\\\\n/g"]
+  },
   "redhat.telemetry.enabled": false,
   "terminal.integrated.fontFamily": "Source Code Pro",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
