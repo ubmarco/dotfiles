@@ -88,7 +88,7 @@
   "spellright.language": ["en_US"],
   "spellright.notificationClass": "warning",
   "spellright.ignoreRegExpsByClass": {
-    "restructuredtext": [ "/\\\\n/g"]
+    "restructuredtext": ["/\\\\n/g"]
   },
   "redhat.telemetry.enabled": false,
   "terminal.integrated.fontFamily": "Source Code Pro",
