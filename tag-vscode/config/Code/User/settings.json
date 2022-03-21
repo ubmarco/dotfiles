@@ -129,5 +129,6 @@
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
-  }
+  },
+  "search.useIgnoreFiles": false
 }
