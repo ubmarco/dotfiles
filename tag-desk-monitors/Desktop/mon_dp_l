@@ -1,8 +1,0 @@
-#!/bin/sh
-
-# activate all monitors
-# eDP-1 laptop
-# DP-1 middle monitor
-# HDMI-2 off
-xrandr --output eDP-1 --mode 1920x1080 --pos 1920x437 --output DP-1 --mode 1920x1200 --pos 0x0 --primary --output HDMI-2 --off
-
