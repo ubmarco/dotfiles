@@ -1,4 +1,4 @@
-EXCLUDES="README.rst LICENSE unlinked"
+EXCLUDES="README.rst LICENSE unlinked dotfiles.code-workspace"
 UNDOTTED="Desktop backup*.sh"
 DOTFILES_DIRS="~/.dotfiles"
 
