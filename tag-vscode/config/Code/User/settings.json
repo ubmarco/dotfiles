@@ -76,7 +76,8 @@
   "python.workspaceSymbols.exclusionPatterns": ["**/site-packages/**", ".venv"],
   "search.exclude": {
     "**/.venv": true,
-    "**/docs/_build": true
+    "**/docs/_build": true,
+    "sst/.build": true
   },
   "sort-imports.on-save": false,
   "spellright.documentTypes": [
