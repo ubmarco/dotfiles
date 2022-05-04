@@ -1,0 +1,19 @@
+[flake8]
+exclude=
+    .git,
+    __pycache__,
+    .tox,
+    docs,
+    .venv,
+    .serverless
+max-line-length=120
+ignore=
+    A001    # variable ... is shadowing a python builtin (prefer pylint)
+    B902    # blind except Exception: statement (prefer pylint)
+    C812    # missing trailing comma (black prefers this style)
+    C813    # missing trailing comma in Python 3 (black :( )
+    E203    # whitespace before ':' (black prefers this style)
+    E501    # line-too-long (prefer pylint)
+    F401    # imported but unused (prefer import json)
+    F841    # unused variable (prefer pylint)
+    W503    # line break before binary operator (black prefers this style)

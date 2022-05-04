@@ -65,8 +65,14 @@
   "python.languageServer": "Jedi",
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--config=/home/marco/.dotfiles/unlinked/python/.flake8"
+  ],
   "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [
+    "--rcfile=/home/marco/.dotfiles/unlinked/python/pylintrc"
+  ],
   "python.pythonPath": ".venv/bin/python",
   "python.testing.nosetestsEnabled": false,
   "python.testing.pytestArgs": ["tests"],
