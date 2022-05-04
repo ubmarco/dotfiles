@@ -57,7 +57,6 @@
   "python.formatting.blackArgs": [
     "--line-length",
     "120",
-    "--skip-string-normalization",
     "--experimental-string-processing",
     "--target-version",
     "py38"
