@@ -74,6 +74,10 @@
     "--rcfile=/home/marco/.dotfiles/unlinked/python/pylintrc"
   ],
   "python.pythonPath": ".venv/bin/python",
+  "python.sortImports.args": [
+    "--settings-path",
+    "/home/marco/.dotfiles/unlinked/python/.isort.cfg"
+  ],
   "python.testing.nosetestsEnabled": false,
   "python.testing.pytestArgs": ["tests"],
   "python.testing.pytestEnabled": true,
@@ -129,12 +133,19 @@
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
   "[yaml]": {
     "editor.rulers": [99],
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
+    "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
-  "search.useIgnoreFiles": false
+  "search.useIgnoreFiles": false,
+  "editor.codeActionsOnSave": {},
+  "editor.renderWhitespace": "all"
 }
