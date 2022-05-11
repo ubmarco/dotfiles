@@ -83,6 +83,14 @@
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
   "python.workspaceSymbols.exclusionPatterns": ["**/site-packages/**", ".venv"],
+  "restructuredtext.linter.doc8.extraArgs": [
+    "--config",
+    "/home/marco/.dotfiles/unlinked/python/doc8.ini"
+  ],
+  "restructuredtext.linter.rstcheck.extraArgs": [
+    "--config",
+    "/home/marco/.dotfiles/unlinked/python/.rstcheck.cfg"
+  ],
   "search.exclude": {
     "**/.venv": true,
     "**/docs/_build": true,
