@@ -52,3 +52,8 @@
 # It's also possible to overwrite above global settings if you like (like the compare tool)
 [include]
     path = ~/.gitconfig.local
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
