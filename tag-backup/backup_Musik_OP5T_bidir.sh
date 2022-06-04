@@ -1,9 +1,9 @@
 #!/bin/bash
 
 src="/media/daten_fat32/Musik/Music_OP5T/"
-dst="root@192.168.2.114:/storage/emulated/0/Music"
+dst="root@192.168.3.159:/storage/emulated/0/Music"
 
-command_common="rsync -e 'sshpass -p admin ssh -p2222 -oKexAlgorithms=+diffie-hellman-group1-sha1' -hvrl --size-only --progress --stats"
+command_common="rsync -e 'sshpass -p admin ssh -p2222 -oHostKeyAlgorithms=+ssh-dss -oKexAlgorithms=+diffie-hellman-group1-sha1' -hvrl --size-only --progress --stats"
 command_dirs="${src} ${dst}"
 command_dry="${command_common} -n ${command_dirs}"
 command="${command_common} ${command_dirs}"
