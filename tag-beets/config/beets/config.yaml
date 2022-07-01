@@ -20,6 +20,9 @@ paths:
     genre:comedy: aa_Comedy/$albumartist/$album%aunique{}/$track $title
     genre:audio book album:eins zu eins: aa_Hörbücher/$albumartist - $album%aunique{}/$item_year.$item_month.$item_day $title
     genre:audio book: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
+    genre:horbuch: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
+    genre:hörbuch: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
+    genre:hörspiel: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
     genre:vnv_nation_like: VNV Nation/aa_Similar/$artist - $title
     default: $albumartist/$album%aunique{}/$track $title
     singleton: $albumartist/aa_Non_Album/$title
