@@ -87,6 +87,7 @@
     "--config",
     "/home/marco/.dotfiles/unlinked/python/doc8.ini"
   ],
+  "restructuredtext.linter.rstcheck.executablePath": ".venv/bin/rstcheck",
   "restructuredtext.linter.rstcheck.extraArgs": [
     "--config",
     "/home/marco/.dotfiles/unlinked/python/.rstcheck.cfg"
@@ -135,6 +136,12 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[restructuredtext]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wrappingIndent": "same",
+    "editor.wordWrapColumn": 120
+  },
+
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
