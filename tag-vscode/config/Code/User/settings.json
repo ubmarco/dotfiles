@@ -93,7 +93,9 @@
     "/home/marco/.dotfiles/unlinked/python/.rstcheck.cfg"
   ],
   "search.exclude": {
+    "**/.mypy_cache": true,
     "**/.venv": true,
+    "**/data-management-docs": true,
     "**/docs/_build": true,
     "sst/.build": true
   },
