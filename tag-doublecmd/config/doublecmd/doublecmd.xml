@@ -190,7 +190,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/marco/Downloads/</Path>
+                  <Path>/home/marco/.dotfiles/tag-doublecmd/config/doublecmd/</Path>
                 </Paths>
               </Entry>
             </History>
