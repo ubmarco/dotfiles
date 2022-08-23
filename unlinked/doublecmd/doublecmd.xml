@@ -152,9 +152,9 @@
     </MiddleToolbar>
   </Toolbars>
   <MainWindow>
-    <Position Save="True">
-      <Left>4749</Left>
-      <Top>168</Top>
+    <Position Save="False">
+      <Left>2357</Left>
+      <Top>120</Top>
       <Width>1885</Width>
       <Height>1048</Height>
       <PixelsPerInch>96</PixelsPerInch>
@@ -190,7 +190,7 @@
               <Entry Active="True">
                 <FileSource Type="FileSystem"/>
                 <Paths>
-                  <Path>/home/marco/.dotfiles/tag-doublecmd/config/</Path>
+                  <Path>/home/marco/</Path>
                 </Paths>
               </Entry>
             </History>
@@ -208,7 +208,7 @@
   </Tabs>
   <Configuration Save="True" SortOrder="1" TreeType="0">
     <UseConfigInProgramDir>False</UseConfigInProgramDir>
-    <FolderTabs Save="True"/>
+    <FolderTabs Save="False"/>
   </Configuration>
   <Language>
     <POFileName>doublecmd.en.po</POFileName>
@@ -604,7 +604,7 @@
     <IgnoreListFile>%DC_CONFIG_PATH%/ignorelist.txt</IgnoreListFile>
   </IgnoreList>
   <DirectoryHotList>
-    <HotDir Name="share_c_level" Path="/home/marco/share_c_level/"/>
+    <HotDir Name="share_c_level" Path="/home/marco/share_c_level"/>
   </DirectoryHotList>
   <Viewer>
     <PreviewVisible>False</PreviewVisible>
