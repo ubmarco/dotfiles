@@ -218,9 +218,9 @@
     <ShowCurDirTitleBar>False</ShowCurDirTitleBar>
     <ActiveRight>False</ActiveRight>
     <RunInTerminalStayOpenCmd>xfce4-terminal</RunInTerminalStayOpenCmd>
-    <RunInTerminalStayOpenParams>-e zsh -c '{command}; echo -n Press ENTER to exit... ; read a'</RunInTerminalStayOpenParams>
+    <RunInTerminalStayOpenParams>-e "zsh -c '{command}; echo -n Press ENTER to exit... ; read a'"</RunInTerminalStayOpenParams>
     <RunInTerminalCloseCmd>xfce4-terminal</RunInTerminalCloseCmd>
-    <RunInTerminalCloseParams>-e zsh -c {command}</RunInTerminalCloseParams>
+    <RunInTerminalCloseParams>-e "zsh -c '{command}'"</RunInTerminalCloseParams>
     <JustRunTerminal>xfce4-terminal</JustRunTerminal>
     <JustRunTermParams/>
     <OnlyOneAppInstance>True</OnlyOneAppInstance>
@@ -271,10 +271,10 @@
       <RunInTerminal>False</RunInTerminal>
       <KeepTerminalOpen>False</KeepTerminalOpen>
     </Viewer>
-    <Editor Enabled="False">
-      <Path/>
+    <Editor Enabled="True">
+      <Path>/home/marco/.local/bin/lvim</Path>
       <Parameters/>
-      <RunInTerminal>False</RunInTerminal>
+      <RunInTerminal>True</RunInTerminal>
       <KeepTerminalOpen>False</KeepTerminalOpen>
     </Editor>
     <Differ Enabled="False">
@@ -622,7 +622,7 @@
     <NumberOfColumns>1</NumberOfColumns>
     <TabSpaces>8</TabSpaces>
     <MaxTextWidth>1024</MaxTextWidth>
-    <ViewerMode>0</ViewerMode>
+    <ViewerMode>1</ViewerMode>
     <PrintMargins>200|200|200|200</PrintMargins>
     <ShowCaret>False</ShowCaret>
     <LeftMargin>4</LeftMargin>
