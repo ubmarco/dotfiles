@@ -1,2 +1,8 @@
 .vscode
 **/__pycache__
+
+# ignore some doublecmd config/cache/history files; doublecmd takes its config directly from this directory
+# using the --config-dir CLI parameter
+unlinked/doublecmd/history.xml
+unlinked/doublecmd/pixmaps.cache
+unlinked/doublecmd/session.ini
