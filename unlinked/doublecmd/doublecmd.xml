@@ -603,7 +603,9 @@
   <IgnoreList Enabled="False">
     <IgnoreListFile>%DC_CONFIG_PATH%/ignorelist.txt</IgnoreListFile>
   </IgnoreList>
-  <DirectoryHotList/>
+  <DirectoryHotList>
+    <HotDir Name="share_c_level" Path="/home/marco/share_c_level/"/>
+  </DirectoryHotList>
   <Viewer>
     <PreviewVisible>False</PreviewVisible>
     <ImageStretch>False</ImageStretch>
