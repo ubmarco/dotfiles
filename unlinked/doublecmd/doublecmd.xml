@@ -287,9 +287,9 @@
   </Tools>
   <Fonts>
     <Main>
-      <Name>default</Name>
+      <Name>Hack Nerd Font Mono</Name>
       <Size>9</Size>
-      <Style>1</Style>
+      <Style>0</Style>
       <Quality>0</Quality>
     </Main>
     <Editor>
