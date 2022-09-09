@@ -605,6 +605,7 @@
   </IgnoreList>
   <DirectoryHotList>
     <HotDir Name="share_c_level" Path="/home/marco/share_c_level"/>
+    <HotDir Name="share_c_level / 03_Buchhaltung" Path="/home/marco/share_c_level/00_orga/03_Buchhaltung/"/>
   </DirectoryHotList>
   <Viewer>
     <PreviewVisible>False</PreviewVisible>
