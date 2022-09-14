@@ -39,4 +39,4 @@ fi
 echo "$full_cmd"
 
 # run it
-# eval $full_cmd
+eval $full_cmd
