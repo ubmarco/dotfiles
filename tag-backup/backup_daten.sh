@@ -1,7 +1,7 @@
 #!/bin/bash
 
-src="/media/daten_fat32/Daten/"
-dst="/media/dlink_nas/Sicherungen/daten_fat32/Daten/"
+src="/mnt/data/Sync/Daten/"
+dst="/mnt/dlink_nas_home/Sicherungen/daten_fat32/Daten/"
 
 command_common="rsync -hvrltDO --delete --modify-window=7200 --stats"
 command_dirs="${src} ${dst}"

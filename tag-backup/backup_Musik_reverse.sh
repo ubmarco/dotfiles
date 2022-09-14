@@ -1,7 +1,7 @@
 #!/bin/bash
 
-src="/media/dlink_nas/Musik/"
-dst="/media/daten_fat32/Musik/"
+src="/mnt/dlink_nas_home/Musik/"
+dst="/mnt/data/Sync/Musik/"
 
 command_common="rsync -hvrltDO --delete --modify-window=7200 --stats"
 command_dirs="${src} ${dst}"

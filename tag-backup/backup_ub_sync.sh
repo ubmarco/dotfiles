@@ -1,7 +1,7 @@
 #!/bin/bash
 
 src="/useblocks/sync/"
-dst="/media/dlink_nas/Sicherungen/ub_sync/sync/"
+dst="/mnt/dlink_nas_home/Sicherungen/ub_sync/sync/"
 
 command_common="rsync -hvrltDO --delete --modify-window=7200 --stats --exclude '.git'"
 command_dirs="${src} ${dst}"

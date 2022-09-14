@@ -1,6 +1,6 @@
 #!/bin/bash
 
-src="/media/daten_fat32/Musik/Musik_Beets_new/"
+src="/mnt/data/Sync/Musik/Musik_Beets_new/"
 dst="volumio@192.168.2.102:/media/A8BB-95C3/Musik_Beets_new/"
 
 command_common="rsync -hvrltDO --delete --modify-window=7200 --stats -e 'sshpass -p 'volumio' ssh'"

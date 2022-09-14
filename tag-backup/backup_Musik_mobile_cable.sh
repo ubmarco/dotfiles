@@ -1,5 +1,5 @@
 #!/bin/bash
-echo Syncing from /media/marco/daten_fat32/music_mobile/ to /media/dlink_nas/Musikarchiv/ via USB cable
+echo Syncing from /media/marco/daten_fat32/music_mobile/ to /mnt/dlink_nas_home/Musikarchiv/ via USB cable
 adb root
 #adb remount
 adb -d forward tcp:8090 tcp:8090

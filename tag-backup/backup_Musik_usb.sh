@@ -1,6 +1,6 @@
 #!/bin/bash
 
-src="/media/daten_fat32/Musik/Musik_Beets_new"
+src="/mnt/data/Sync/Musik/Musik_Beets_new"
 dst="/media/A8BB-95C3"
 
 command_common="rsync -hvrltDO --delete --modify-window=7200 --stats"

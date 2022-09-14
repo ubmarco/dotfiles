@@ -1,6 +1,6 @@
 #!/bin/bash
 
-src="/media/daten_fat32/Fotos/"
+src="/mnt/data/Sync/Fotos/"
 dst="/run/media/marco/mobil_1TB/backup_Fotos/Fotos/"
 
 command_common="rsync -hvrltDO --delete --modify-window=7200 --stats"

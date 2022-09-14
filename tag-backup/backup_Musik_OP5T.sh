@@ -1,6 +1,6 @@
 #!/bin/bash
 
-src="/media/daten_fat32/Musik/Music_OP5T/"
+src="/mnt/data/Sync/Musik/Music_OP5T/"
 dst="root@192.168.3.159:/storage/emulated/0/Music"
 
 command_common="rsync -e 'sshpass -p admin ssh -p2222 -oHostKeyAlgorithms=+ssh-dss -oKexAlgorithms=+diffie-hellman-group1-sha1' -hvrl --size-only --progress --delete --stats"
