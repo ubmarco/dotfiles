@@ -785,12 +785,12 @@
         <Column>
           <Title>Name</Title>
           <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
-          <Width>185</Width>
+          <Width>465</Width>
           <Align>0</Align>
           <Font>
-            <Name>default</Name>
+            <Name>Hack Nerd Font Mono</Name>
             <Size>9</Size>
-            <Style>1</Style>
+            <Style>0</Style>
             <Quality>0</Quality>
           </Font>
           <TextColor>-2147483640</TextColor>
@@ -808,12 +808,12 @@
         <Column>
           <Title>Ext</Title>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>56</Width>
+          <Width>112</Width>
           <Align>0</Align>
           <Font>
-            <Name>default</Name>
+            <Name>Hack Nerd Font Mono</Name>
             <Size>9</Size>
-            <Style>1</Style>
+            <Style>0</Style>
             <Quality>0</Quality>
           </Font>
           <TextColor>-2147483640</TextColor>
@@ -834,9 +834,9 @@
           <Width>70</Width>
           <Align>1</Align>
           <Font>
-            <Name>default</Name>
+            <Name>Hack Nerd Font Mono</Name>
             <Size>9</Size>
-            <Style>1</Style>
+            <Style>0</Style>
             <Quality>0</Quality>
           </Font>
           <TextColor>-2147483640</TextColor>
@@ -854,12 +854,35 @@
         <Column>
           <Title>Date</Title>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
-          <Width>136</Width>
-          <Align>1</Align>
+          <Width>159</Width>
+          <Align>2</Align>
           <Font>
-            <Name>default</Name>
+            <Name>Hack Nerd Font Mono</Name>
             <Size>9</Size>
-            <Style>1</Style>
+            <Style>0</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Owner</Title>
+          <FuncString>[DC().GETFILEOWNER{}]</FuncString>
+          <Width>57</Width>
+          <Align>2</Align>
+          <Font>
+            <Name>Hack Nerd Font Mono</Name>
+            <Size>9</Size>
+            <Style>0</Style>
             <Quality>0</Quality>
           </Font>
           <TextColor>-2147483640</TextColor>
@@ -877,12 +900,12 @@
         <Column>
           <Title>Attr</Title>
           <FuncString>[DC().GETFILEATTR{}]</FuncString>
-          <Width>92</Width>
-          <Align>1</Align>
+          <Width>91</Width>
+          <Align>2</Align>
           <Font>
-            <Name>default</Name>
+            <Name>Hack Nerd Font Mono</Name>
             <Size>9</Size>
-            <Style>1</Style>
+            <Style>0</Style>
             <Quality>0</Quality>
           </Font>
           <TextColor>-2147483640</TextColor>
@@ -1032,4 +1055,28 @@
     <PluginFilenameStyle>0</PluginFilenameStyle>
     <PluginPathToBeRelativeTo>%COMMANDER_PATH%</PluginPathToBeRelativeTo>
   </Plugins>
+  <MultiRenamePresets>
+    <LastPreset>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</LastPreset>
+    <Presets>
+      <Preset>
+        <Name>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</Name>
+        <Filename>220811_[N]</Filename>
+        <Extension>[E]</Extension>
+        <FilenameStyle>0</FilenameStyle>
+        <ExtensionStyle>0</ExtensionStyle>
+        <Find/>
+        <Replace/>
+        <RegExp>False</RegExp>
+        <UseSubs>False</UseSubs>
+        <Counter>1</Counter>
+        <Interval>1</Interval>
+        <Width>0</Width>
+        <Log>
+          <Enabled>False</Enabled>
+          <Append>False</Append>
+          <File/>
+        </Log>
+      </Preset>
+    </Presets>
+  </MultiRenamePresets>
 </doublecmd>
