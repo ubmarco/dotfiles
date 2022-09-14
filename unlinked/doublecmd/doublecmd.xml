@@ -877,7 +877,30 @@
         <Column>
           <Title>Owner</Title>
           <FuncString>[DC().GETFILEOWNER{}]</FuncString>
-          <Width>57</Width>
+          <Width>62</Width>
+          <Align>2</Align>
+          <Font>
+            <Name>Hack Nerd Font Mono</Name>
+            <Size>9</Size>
+            <Style>0</Style>
+            <Quality>0</Quality>
+          </Font>
+          <TextColor>-2147483640</TextColor>
+          <Background>-2147483643</Background>
+          <Background2>-2147483643</Background2>
+          <MarkColor>255</MarkColor>
+          <CursorColor>-2147483635</CursorColor>
+          <CursorText>-2147483634</CursorText>
+          <InactiveCursorColor>-2147483645</InactiveCursorColor>
+          <InactiveMarkColor>255</InactiveMarkColor>
+          <UseInvertedSelection>False</UseInvertedSelection>
+          <UseInactiveSelColor>False</UseInactiveSelColor>
+          <Overcolor>True</Overcolor>
+        </Column>
+        <Column>
+          <Title>Group</Title>
+          <FuncString>[DC().GETFILEGROUP{}]</FuncString>
+          <Width>59</Width>
           <Align>2</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
