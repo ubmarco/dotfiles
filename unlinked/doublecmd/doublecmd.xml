@@ -605,7 +605,8 @@
   </IgnoreList>
   <DirectoryHotList>
     <HotDir Name="share_c_level" Path="/home/marco/share_c_level"/>
-    <HotDir Name="share_c_level / 03_Buchhaltung" Path="/home/marco/share_c_level/00_orga/03_Buchhaltung/"/>
+    <HotDir Name="share_c_level / 03_Buchhaltung" Path="/home/marco/share_c_level/00_orga/03_Buchhaltung"/>
+    <HotDir Name="/mnt/dlink_nas/98_scanner/" Path="/mnt/dlink_nas/98_scanner"/>
   </DirectoryHotList>
   <Viewer>
     <PreviewVisible>False</PreviewVisible>
