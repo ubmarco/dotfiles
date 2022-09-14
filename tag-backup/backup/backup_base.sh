@@ -6,7 +6,7 @@ command="${command_common} ${command_dirs}"
 
 src=""
 dst=""
-cmd="rsync -hvrltDO --delete --modify-window=7200 --stats"  # default
+cmd="rsync -hvrltDO --delete --modify-window=7200 --stats --perms --chmod=777"  # default
 dry=""
 
 while getopts "s:d:c:n" opt; do
