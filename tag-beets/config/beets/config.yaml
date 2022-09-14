@@ -1,35 +1,35 @@
-library: /media/daten_fat32/Musik/musiclibrary.blb
-directory: /media/daten_fat32/Musik/Musik_Beets_new
+library: /mnt/data/Sync/Musik/musiclibrary.blb
+directory: /mnt/data/Sync/Musik/Musik_Beets_new
 plugins: inline acousticbrainz discogs
 import:
-    move: yes
-    write: yes
+  move: yes
+  write: yes
 ui:
-    color: yes
+  color: yes
 original_date: yes
 paths:
-    albumtype:soundtrack: aa_Soundtracks/$album%aunique{}/$track $artist - $title
-    genre:kinder artist:Gebrüder Grimm: aa_Kinder/$albumartist/$album%aunique{}/%if{$multidisc,CD $disc/}$title
-    genre:kinder album:wumme: aa_Kinder/$albumartist - $album%aunique{}/$item_year.$item_month.$item_day $title
-    genre:kinder_conni: aa_Kinder/Conni/$album/%if{$multidisc,CD $disc/}$track $title
-    genre:kinder_pumuckl: aa_Kinder/Pumuckl/%if{$multidisc,CD $disc/}$title
-    genre:kinder albumartist:Various Artists: aa_Kinder/$album%aunique{}/%if{$multidisc,CD $disc/}$track $title
-    genre:kinder: aa_Kinder/$albumartist/$album%aunique{}/%if{$multidisc,CD $disc/}$track $title
-    genre:comedy artist:Hans Söllner: aa_Comedy/$albumartist/$title
-    genre:comedy artist:Wiggal: aa_Comedy/$albumartist/$title
-    genre:comedy: aa_Comedy/$albumartist/$album%aunique{}/$track $title
-    genre:audio book album:eins zu eins: aa_Hörbücher/$albumartist - $album%aunique{}/$item_year.$item_month.$item_day $title
-    genre:audio book: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
-    genre:horbuch: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
-    genre:hörbuch: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
-    genre:hörspiel: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
-    genre:vnv_nation_like: VNV Nation/aa_Similar/$artist - $title
-    default: $albumartist/$album%aunique{}/$track $title
-    singleton: $albumartist/aa_Non_Album/$title
-    comp: aa_Compilations/$album%aunique{}/$track $title
+  albumtype:soundtrack: aa_Soundtracks/$album%aunique{}/$track $artist - $title
+  genre:kinder artist:Gebrüder Grimm: aa_Kinder/$albumartist/$album%aunique{}/%if{$multidisc,CD $disc/}$title
+  genre:kinder album:wumme: aa_Kinder/$albumartist - $album%aunique{}/$item_year.$item_month.$item_day $title
+  genre:kinder_conni: aa_Kinder/Conni/$album/%if{$multidisc,CD $disc/}$track $title
+  genre:kinder_pumuckl: aa_Kinder/Pumuckl/%if{$multidisc,CD $disc/}$title
+  genre:kinder albumartist:Various Artists: aa_Kinder/$album%aunique{}/%if{$multidisc,CD $disc/}$track $title
+  genre:kinder: aa_Kinder/$albumartist/$album%aunique{}/%if{$multidisc,CD $disc/}$track $title
+  genre:comedy artist:Hans Söllner: aa_Comedy/$albumartist/$title
+  genre:comedy artist:Wiggal: aa_Comedy/$albumartist/$title
+  genre:comedy: aa_Comedy/$albumartist/$album%aunique{}/$track $title
+  genre:audio book album:eins zu eins: aa_Hörbücher/$albumartist - $album%aunique{}/$item_year.$item_month.$item_day $title
+  genre:audio book: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
+  genre:horbuch: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
+  genre:hörbuch: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
+  genre:hörspiel: aa_Hörbücher/$albumartist - $album/%if{$multidisc,CD $disc/}$tracknumber_3_digit $title
+  genre:vnv_nation_like: VNV Nation/aa_Similar/$artist - $title
+  default: $albumartist/$album%aunique{}/$track $title
+  singleton: $albumartist/aa_Non_Album/$title
+  comp: aa_Compilations/$album%aunique{}/$track $title
 item_fields:
-    multidisc: 1 if disctotal > 1 else 0
-    item_year: return "{:04d}".format(year)
-    item_month: return "{:02d}".format(month)
-    item_day: return "{:02d}".format(day)
-    tracknumber_3_digit: return "{:03d}".format(track)
+  multidisc: 1 if disctotal > 1 else 0
+  item_year: return "{:04d}".format(year)
+  item_month: return "{:02d}".format(month)
+  item_day: return "{:02d}".format(day)
+  tracknumber_3_digit: return "{:03d}".format(track)
