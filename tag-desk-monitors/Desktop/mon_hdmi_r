@@ -8,8 +8,8 @@ if hostname | grep "tux05"; then
 	xrandr --addmode HDMI-1 2560x1440_40
 	xrandr --output HDMI-1 --mode 2560x1440_400 --pos 1366x0 --primary --output LVDS-1 --mode 1366x768 --pos 0x774
 elif hostname | grep "tux07"; then
-	# Tuxedo InifinityBook S15 Gen 6
-	xrandr --output eDP-1 --mode 1920x1080 --pos 0x1011 --output DP-1 --off --output HDMI-1 --mode 2560x1440 --pos 1920x0 --primary
+	# # Tuxedo InifinityBook S15 Gen 6
+	xfconf-query --create -c displays -p "/Schemes/Apply" -t string -s "35abb09819106a210cbbfd5dd98f522f9c492991"
 	# Load panel config
 	xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/hdmi_r_tux07.tar.bz2
 elif hostname | grep "tux01"; then
