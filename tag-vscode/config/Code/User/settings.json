@@ -16,12 +16,17 @@
   ],
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll": true
+  },
   "editor.fontFamily": "Source Code Pro",
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": "active",
   "editor.largeFileOptimizations": false,
   "editor.mouseWheelZoom": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "all",
   "editor.rulers": [120],
   "editor.suggestSelection": "first",
   "editor.wordWrapColumn": 120,
@@ -124,6 +129,9 @@
     "!encrypted/pkcs1-oaep scalar",
     "!vault scalar"
   ],
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -143,7 +151,6 @@
     "editor.wrappingIndent": "same",
     "editor.wordWrapColumn": 120
   },
-
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -163,10 +170,5 @@
     "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
   "search.useIgnoreFiles": false,
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll": true
-  },
-  "editor.renderWhitespace": "all",
-  "C_Cpp.default.includePath": ["headers"]
+  "workbench.startupEditor": "none"
 }
