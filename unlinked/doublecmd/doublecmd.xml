@@ -794,7 +794,7 @@
         <Column>
           <Title>Name</Title>
           <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
-          <Width>320</Width>
+          <Width>369</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -817,7 +817,7 @@
         <Column>
           <Title>Ext</Title>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>65</Width>
+          <Width>83</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
