@@ -116,7 +116,7 @@
           <Icon>/usr/share/pixmaps/bcompare.png</Icon>
           <Hint>bcompare</Hint>
           <Command>bcompare</Command>
-          <Params>%pl %pr</Params>
+          <Params>%Dl %Dr</Params>
           <StartPath>/usr/bin/</StartPath>
         </Program>
       </Row>
