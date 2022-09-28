@@ -111,6 +111,14 @@
           <Icon>cm_copyfullnamestoclip</Icon>
           <Command>cm_CopyFullNamesToClip</Command>
         </Command>
+        <Program>
+          <ID>{4CDD2924-E52F-420F-99A2-E16FAC556802}</ID>
+          <Icon>/usr/share/pixmaps/bcompare.png</Icon>
+          <Hint>bcompare</Hint>
+          <Command>bcompare</Command>
+          <Params>%pl %pr</Params>
+          <StartPath>/usr/bin/</StartPath>
+        </Program>
       </Row>
     </MainToolbar>
     <MiddleToolbar>
