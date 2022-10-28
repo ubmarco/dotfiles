@@ -47,6 +47,7 @@
   "files.insertFinalNewline": true,
   "git.autofetch": true,
   "git.confirmSync": false,
+  "git.pullTags": false,
   "git.suggestSmartCommit": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
