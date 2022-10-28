@@ -168,7 +168,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[xml]": {
-    "editor.defaultFormatter": "DotJoshJohnson.xml"
+    "editor.defaultFormatter": "DotJoshJohnson.xml",
+    "editor.formatOnSave": false
   },
   "search.useIgnoreFiles": false,
   "workbench.startupEditor": "none"
