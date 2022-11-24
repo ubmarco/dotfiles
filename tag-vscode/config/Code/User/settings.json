@@ -38,11 +38,12 @@
   "files.exclude": {
     ".history/**": true,
     "**/__pycache__": true,
-    "**/.git": false,
     "**/.classpath": true,
+    "**/.factorypath": true,
+    "**/.git": false,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "build/**": true
   },
   "files.insertFinalNewline": true,
   "git.autofetch": true,
