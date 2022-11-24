@@ -617,6 +617,7 @@
     <HotDir Name="share_c_level / 03_Buchhaltung" Path="/home/marco/share_c_level/00_orga/03_Buchhaltung"/>
     <HotDir Name="/mnt/dlink_nas/98_scanner/" Path="/mnt/dlink_nas/98_scanner"/>
     <HotDir Name="Sync" Path="/mnt/data/Sync"/>
+    <HotDir Name="Sync / Daten" Path="/mnt/data/Sync/Daten"/>
   </DirectoryHotList>
   <Viewer>
     <PreviewVisible>False</PreviewVisible>
