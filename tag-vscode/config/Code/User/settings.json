@@ -14,6 +14,7 @@
       "compares": ["text", "folders", "images"]
     }
   ],
+  "debug.focusWindowOnBreak": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
