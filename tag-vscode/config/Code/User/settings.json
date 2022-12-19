@@ -120,6 +120,7 @@
     "restructuredtext": ["/\\\\n/g"]
   },
   "redhat.telemetry.enabled": false,
+  "restructuredtext.editor.listEditing.list.indentationSize": "inherit",
   "terminal.integrated.fontFamily": "Source Code Pro",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.titleBarStyle": "custom",
