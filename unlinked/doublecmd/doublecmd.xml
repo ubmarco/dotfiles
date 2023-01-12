@@ -612,7 +612,7 @@
     <IgnoreListFile>%DC_CONFIG_PATH%/ignorelist.txt</IgnoreListFile>
   </IgnoreList>
   <DirectoryHotList>
-    <HotDir Name="Downloads" Path="/home/marco/Downloads/"/>
+    <HotDir Name="Downloads" Path="/home/marco/Downloads"/>
     <HotDir Name="share_c_level" Path="/home/marco/share_c_level"/>
     <HotDir Name="share_c_level / 03_Buchhaltung" Path="/home/marco/share_c_level/00_orga/03_Buchhaltung"/>
     <HotDir Name="share_project_files" Path="/home/marco/share_project_files"/>
