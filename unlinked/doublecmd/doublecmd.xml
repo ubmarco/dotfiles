@@ -1094,16 +1094,16 @@
     <PluginPathToBeRelativeTo>%COMMANDER_PATH%</PluginPathToBeRelativeTo>
   </Plugins>
   <MultiRenamePresets>
-    <LastPreset>Exif</LastPreset>
+    <LastPreset>Exif_Rename</LastPreset>
     <Presets>
       <Preset>
         <Name>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</Name>
-        <Filename>[=Plugin(&lt;Exif&gt;).Date taken{}]_[N]</Filename>
+        <Filename>[N]</Filename>
         <Extension>[E]</Extension>
         <FilenameStyle>0</FilenameStyle>
         <ExtensionStyle>0</ExtensionStyle>
-        <Find>(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})</Find>
-        <Replace>$1.$2.$3_$4.$5.$6</Replace>
+        <Find>2022</Find>
+        <Replace>22</Replace>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
         <Counter>1</Counter>
@@ -1142,6 +1142,25 @@
         <ExtensionStyle>0</ExtensionStyle>
         <Find>\.HEIC\.jpg$</Find>
         <Replace>.jpg</Replace>
+        <RegExp>True</RegExp>
+        <UseSubs>True</UseSubs>
+        <Counter>1</Counter>
+        <Interval>1</Interval>
+        <Width>0</Width>
+        <Log>
+          <Enabled>False</Enabled>
+          <Append>False</Append>
+          <File/>
+        </Log>
+      </Preset>
+      <Preset>
+        <Name>Exif_Rename</Name>
+        <Filename>[=Plugin(&lt;Exif&gt;).Date taken{}]_[N]</Filename>
+        <Extension>[E]</Extension>
+        <FilenameStyle>0</FilenameStyle>
+        <ExtensionStyle>0</ExtensionStyle>
+        <Find>(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})</Find>
+        <Replace>$1.$2.$3_$4.$5.$6</Replace>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
         <Counter>1</Counter>
