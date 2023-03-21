@@ -1,7 +1,7 @@
 #!/bin/sh
-WIFI_DEV=$(nmcli | rg Stockmann | awk -F ':' '{print $1}' | head -1)
-if [ -n "$WIFI_DEV" ]; then
+WIFI_DEVS=$(nmcli dev | rg 'wifi +connected' | awk '{print $1}')
+for WIFI_DEV in $WIFI_DEVS; do
     iwlist $WIFI_DEV channel | rg Current | sed 's/^[[:space:]]*//'
-    echo
     iw dev $WIFI_DEV link
-fi
+    echo
+done
