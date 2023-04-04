@@ -46,6 +46,10 @@
     "**/.settings": true,
     "build/**": true
   },
+  "files.watcherExclude": {
+    "**/.tox/**": true,
+    "**/target/**": true
+  },
   "files.insertFinalNewline": true,
   "git.autofetch": true,
   "git.confirmSync": false,
