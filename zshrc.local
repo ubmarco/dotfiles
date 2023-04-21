@@ -5,6 +5,10 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.yarn/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+
+# Ruby gem dir
+export BUNDLE_PATH=~/.gems
 
 # Load libython3 before starting vim
 # so this issue does not occur for arxml.vim with lxml
