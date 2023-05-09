@@ -168,7 +168,8 @@
   "[python]": {
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
-    }
+    },
+    "editor.formatOnType": true
   },
   "[yaml]": {
     "editor.rulers": [99],
@@ -179,5 +180,6 @@
     "editor.formatOnSave": false
   },
   "search.useIgnoreFiles": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Visual Studio Dark"
 }
