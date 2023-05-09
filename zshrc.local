@@ -32,7 +32,7 @@ alias :q='exit'
 # open files with system editor
 alias xo='xdg-open'
 
-# fzf search packages (fp==find package)
+# fzf search installed packages (fip==find installed package)
 # you may add one ore more query options with a space,
 # the options are directly added to 'pacman -Qq', so reasonable examples are
 # fp    -- find all packages
@@ -45,9 +45,12 @@ alias xo='xdg-open'
 # fp u  -- List packages that can be upgraded
 # fp me -- Combination example: list external (AUR) packages (explicitly installed)
 # fp md -- Combination example: list external (AUR) packages (installed as dependencies)
-fp() {
+fip() {
     pacman -Qq$1 | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
 }
+
+# find packages (including AUR, whether installed or not)
+alias fp='PARUZ=yay paruz'
 
 # use an improved, syntax highlighting version of cat
 alias cat='bat --tabs 2 --style=plain'
