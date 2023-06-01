@@ -1,4 +1,6 @@
 {
+  // The first entry is here due to https://github.com/microsoft/vscode/issues/177142
+  "json.schemaDownload.enable": true,
   "autoDocstring.docstringFormat": "sphinx",
   "aws.profile": "profile:ub_marco.heinemann",
   "aws.sam.enableCodeLenses": false,
@@ -33,7 +35,8 @@
   "editor.wordWrapColumn": 120,
   "files.associations": {
     "*.arxml": "xml",
-    "*.spec": "python"
+    "*.spec": "python",
+    "*.fjson": "json"
   },
   "files.autoSave": "afterDelay",
   "files.exclude": {
@@ -150,6 +153,9 @@
   "[javascriptreact]": {
     "editor.rulers": [100],
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "monosans.djlint"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
