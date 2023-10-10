@@ -1,20 +1,15 @@
 #!/bin/sh
 
 # activate only laptop
-
-if hostname | grep "tux05"; then
-	# special handling of Lenovo E420s
-	# LVDS1 laptop
-	xrandr --output HDMI-1 --off --output LVDS1 --mode 1366x768
-elif hostname | grep "tux07"; then
-	# Tuxedo InifinityBook S15 Gen 6
-	xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-1 --off
+if hostname | grep "tux07"; then
+  # Tuxedo InifinityBook S15 Gen 6
+  xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-1 --off
 elif hostname | grep "tux01"; then
-	# Tuxedo InfinityBook Pro v4
-	xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-2 --off
+  # Tuxedo InfinityBook Pro v4
+  xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-2 --off
 else
-	echo "Hostname ${hostname} unknown"
-	exit 1
+  echo "Hostname ${hostname} unknown"
+  exit 1
 fi
 
 # Load panel config
