@@ -2,7 +2,7 @@
 
 # activate laptop + right wqhd monitor
 if hostname | grep "tux07"; then
-  # # Tuxedo InifinityBook S15 Gen 6
+  # # Tuxedo InfinityBook S15 Gen 6
   xfconf-query --create -c displays -p "/Schemes/Apply" -t string -s "35abb09819106a210cbbfd5dd98f522f9c492991"
   # Load panel config
   xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/hdmi_r_tux07.tar.bz2
@@ -18,4 +18,3 @@ fi
 
 # Arrange desktop icons
 xfdesktop -A
-
