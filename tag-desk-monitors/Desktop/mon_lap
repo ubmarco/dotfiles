@@ -1,14 +1,15 @@
 #!/bin/sh
 
+hostname=$(hostnamectl hostname)
+
 # activate only laptop
-if hostname | grep "tux07"; then
-  # Tuxedo InifinityBook S15 Gen 6
-  xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-1 --off
-elif hostname | grep "tux01"; then
+if [ "$hostname" = "tux07" ] || [ "$hostname" = "tux09" ]; then
+  xrandr --output eDP-1 --output DP-1 --off --output HDMI-1 --off
+elif [ "$hostname" = "tux01" ]; then
   # Tuxedo InfinityBook Pro v4
   xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-2 --off
 else
-  echo "Hostname ${hostname} unknown"
+  echo "Hostname $hostname unknown"
   exit 1
 fi
 
