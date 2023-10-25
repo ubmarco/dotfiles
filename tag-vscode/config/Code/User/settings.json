@@ -69,44 +69,44 @@
   "local-history.maxDisplay": 100,
   "local-history.path": "~/.cache/vscode-history",
   "local-history.saveDelay": 5,
-  "python.formatting.blackArgs": [
-    "--line-length",
-    "120",
-    "--experimental-string-processing",
-    "--target-version",
-    "py38"
-  ],
-  "python.formatting.provider": "black",
-  "python.languageServer": "Jedi",
-  "python.linting.enabled": true,
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Args": [
-    "--config=/home/marco/.dotfiles/unlinked/python/.flake8"
-  ],
-  "python.linting.mypyEnabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.linting.pylintArgs": [
-    "--rcfile=/home/marco/.dotfiles/unlinked/python/pylintrc"
-  ],
-  "python.pythonPath": ".venv/bin/python",
-  "python.sortImports.args": [
-    "--settings-path",
-    "/home/marco/.dotfiles/unlinked/python/.isort.cfg"
-  ],
+  // "python.formatting.blackArgs": [
+  //   "--line-length",
+  //   "120",
+  //   "--experimental-string-processing",
+  //   "--target-version",
+  //   "py38"
+  // ],
+  // "python.formatting.provider": "black",
+  // "python.languageServer": "Jedi",
+  // "python.linting.enabled": true,
+  // "python.linting.flake8Enabled": true,
+  // "python.linting.flake8Args": [
+  //   "--config=/home/marco/.dotfiles/unlinked/python/.flake8"
+  // ],
+  // "python.linting.mypyEnabled": true,
+  // "python.linting.pylintEnabled": true,
+  // "python.linting.pylintArgs": [
+  //   "--rcfile=/home/marco/.dotfiles/unlinked/python/pylintrc"
+  // ],
+  // "python.pythonPath": ".venv/bin/python",
+  // "python.sortImports.args": [
+  //   "--settings-path",
+  //   "/home/marco/.dotfiles/unlinked/python/.isort.cfg"
+  // ],
   "python.testing.nosetestsEnabled": false,
   "python.testing.pytestArgs": ["tests"],
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
   "python.workspaceSymbols.exclusionPatterns": ["**/site-packages/**", ".venv"],
-  "restructuredtext.linter.doc8.extraArgs": [
-    "--config",
-    "/home/marco/.dotfiles/unlinked/python/doc8.ini"
-  ],
-  "restructuredtext.linter.rstcheck.executablePath": ".venv/bin/rstcheck",
-  "restructuredtext.linter.rstcheck.extraArgs": [
-    "--config",
-    "/home/marco/.dotfiles/unlinked/python/.rstcheck.cfg"
-  ],
+  // "restructuredtext.linter.doc8.extraArgs": [
+  //   "--config",
+  //   "/home/marco/.dotfiles/unlinked/python/doc8.ini"
+  // ],
+  // "restructuredtext.linter.rstcheck.executablePath": ".venv/bin/rstcheck",
+  // "restructuredtext.linter.rstcheck.extraArgs": [
+  //   "--config",
+  //   "/home/marco/.dotfiles/unlinked/python/.rstcheck.cfg"
+  // ],
   "search.exclude": {
     "**/.mypy_cache": true,
     "**/.venv": true,
@@ -187,5 +187,8 @@
   },
   "search.useIgnoreFiles": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Visual Studio Dark"
+  "workbench.colorTheme": "Visual Studio Dark",
+  "hediet.vscode-drawio.resizeImages": null,
+  "editor.stickyScroll.enabled": true,
+  "window.zoomLevel": -1
 }
