@@ -5,16 +5,18 @@ hostname=$(hostnamectl hostname)
 # activate only laptop
 if [ "$hostname" = "tux07" ] || [ "$hostname" = "tux09" ]; then
   xrandr --output eDP-1 --output DP-1 --off --output HDMI-1 --off
+  xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/main_panel.tar.bz2
 elif [ "$hostname" = "tux01" ]; then
   # Tuxedo InfinityBook Pro v4
   xrandr --output eDP-1 --mode 1920x1080 --output DP-1 --off --output HDMI-2 --off
+  xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/lap.tar.bz2
 else
   echo "Hostname $hostname unknown"
   exit 1
 fi
 
 # Load panel config
-xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/lap.tar.bz2
+
 
 # Arrange desktop icons
 xfdesktop -A
