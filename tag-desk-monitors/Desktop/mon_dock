@@ -1,16 +1,22 @@
 #!/bin/sh
 
-# need to run that after suspend/standby to get Thunderbolt dock working
-lspci
+hostname=$(hostnamectl hostname)
 
 # activate all monitors
 # eDP1 laptop
+# HDMI1 middle monitor
 # DP1 middle monitor
-# HDMI2 right monitor
-xrandr --output eDP-1 --mode 1920x1080 --pos 0x1153 --output DP-1 --mode 2560x1440 --pos 4480x0 --output HDMI-1 --primary --mode 2560x1440 --pos 1920x0
 
-# Load panel config
-xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/dock.tar.bz2
+if [ "$hostname" = "tux07" ]; then
+    xrandr --output eDP-1 --mode 1920x1080 --pos 0x1153 --output HDMI-1 --primary --mode 2560x1440 --pos 1920x0 --output DP-1 --mode 2560x1440 --pos 4480x0
+    xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/dock.tar.bz2
+elif [ "$hostname" = "tux09" ]; then
+    xrandr --output eDP-1 --mode 2560x1600 --pos 0x699 --output HDMI-1 --primary --mode 2560x1440 --pos 2560x0 --output DP-1 --mode 2560x1440 --pos 5120x0
+    xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/main_panel_2_side.tar.bz2
+else
+  echo "Hostname ${hostname} unknown"
+  exit 1
+fi
 
 # Arrange desktop icons
 xfdesktop -A
@@ -20,4 +26,3 @@ sleep 10s
 
 # Set default audio sink to the dock station
 sh ~/.dotfiles/unlinked/set_audio_dock.sh
-
