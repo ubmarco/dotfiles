@@ -189,6 +189,5 @@
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Visual Studio Dark",
   "hediet.vscode-drawio.resizeImages": null,
-  "editor.stickyScroll.enabled": true,
-  "window.zoomLevel": -1
+  "editor.stickyScroll.enabled": true
 }
