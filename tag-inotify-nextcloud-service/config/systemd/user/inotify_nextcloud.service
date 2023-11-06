@@ -4,7 +4,7 @@ Description=Inotify Nextcloud
 [Service]
 Type=simple
 # Another Type: forking
-ExecStart="%h"/.dotfiles/unlinked/inotify_nextcloud.sh
+ExecStart="%h"/.dotfiles/unlinked/inotify_shares/inotify_shares.sh
 Restart=on-failure
 # Other restart options: always, on-abort, etc
 
