@@ -17,7 +17,7 @@ elif [ "$hostname" = "tux09" ]; then
   # Tuxedo InfinityBook Pro 16 Gen 7
   xrandr --output eDP-1 --mode 2560x1600 --pos 0x1094 --output DP-1 --off --output HDMI-1 --mode 2560x1440 --pos 2560x0 --primary
   # Load panel config
-  xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/main_panel_1_side.tar.bz2
+  ~/.dotfiles/unlinked/panel-config/set_panels.sh -c2
 else
   echo "Hostname ${hostname} unknown"
   exit 1

@@ -12,7 +12,7 @@ if [ "$hostname" = "tux07" ]; then
     xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/dock.tar.bz2
 elif [ "$hostname" = "tux09" ]; then
     xrandr --output eDP-1 --mode 2560x1600 --pos 0x892 --output HDMI-1 --primary --mode 2560x1440 --pos 2560x0 --output DP-1 --mode 2560x1440 --pos 5120x0
-    xfce4-panel-profiles load ~/.dotfiles/unlinked/panel-config/main_panel_2_side.tar.bz2
+    ~/.dotfiles/unlinked/panel-config/set_panels.sh -c3
 else
   echo "Hostname ${hostname} unknown"
   exit 1
