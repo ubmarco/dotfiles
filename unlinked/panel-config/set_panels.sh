@@ -35,11 +35,12 @@ done
 set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 
 # stop the xfconf deamon so the reloading panel will not override the copied file
-# killall xfconfd
+killall xfconfd
 
-# sleep 1
+sleep 1
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+# this is the path of the symlinked panel config xml, it is changed in-place
 PANEL_PATH="${SCRIPT_DIR}/../../tag-panel/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
 
 # remove all panel lines
@@ -60,5 +61,7 @@ if [ "$COUNT" = "3" ]; then
   sed -i '6i \ \ \ \ <value type="int" value="0"/>' ${PANEL_PATH}
 fi
 
-# xfce4-panel -r
+# make sure the panel is currently symlinked as it may get overwritten by xfce
+rcup -f -t panel
 
+xfce4-panel -r
