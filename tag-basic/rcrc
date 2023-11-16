@@ -5,4 +5,3 @@ DOTFILES_DIRS="~/.dotfiles"
 # load user specific .rcrc
 rcrc_user="$HOME/.rcrc.user"
 if test -r $rcrc_user -a -f $rcrc_user;then source $rcrc_user; fi
-
