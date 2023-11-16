@@ -55,7 +55,5 @@ fi
 
 mv ${PANEL_PATH_TMP} ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
 
-# sleep 1
-
 xfce4-panel -r
 
