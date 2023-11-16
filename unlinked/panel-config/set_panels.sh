@@ -35,25 +35,30 @@ done
 set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
 
 # stop the xfconf deamon so the reloading panel will not override the copied file
-killall xfconfd
+# killall xfconfd
 
-sleep 1
+# sleep 1
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-PANEL_PATH="${SCRIPT_DIR}/xfce4-panel.xml"
-PANEL_PATH_TMP="${SCRIPT_DIR}/xfce4-panel.xml.new"
-cp ${PANEL_PATH} ${PANEL_PATH_TMP}
+PANEL_PATH="${SCRIPT_DIR}/../../tag-panel/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml"
+
+# remove all panel lines
+sed -i '/^    <value type="int" value="[[:digit:]]"\/>/d' ${PANEL_PATH}
+
+if [ "$COUNT" = "1" ]; then
+  sed -i '6i \ \ \ \ <value type="int" value="0"/>' ${PANEL_PATH}
+fi
 
 if [ "$COUNT" = "2" ]; then
-  sed -i '7i <value type="int" value="1"/>' ${PANEL_PATH_TMP}
+  sed -i '6i \ \ \ \ <value type="int" value="1"/>' ${PANEL_PATH}
+  sed -i '6i \ \ \ \ <value type="int" value="0"/>' ${PANEL_PATH}
 fi
 
 if [ "$COUNT" = "3" ]; then
-  sed -i '7i <value type="int" value="2"/>' ${PANEL_PATH_TMP}
-  sed -i '7i <value type="int" value="1"/>' ${PANEL_PATH_TMP}
+  sed -i '6i \ \ \ \ <value type="int" value="2"/>' ${PANEL_PATH}
+  sed -i '6i \ \ \ \ <value type="int" value="1"/>' ${PANEL_PATH}
+  sed -i '6i \ \ \ \ <value type="int" value="0"/>' ${PANEL_PATH}
 fi
 
-mv ${PANEL_PATH_TMP} ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
-
-xfce4-panel -r
+# xfce4-panel -r
 

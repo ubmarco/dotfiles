@@ -3,7 +3,6 @@
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
-    <value type="int" value="0"/>
     <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-0" type="empty">
       <property name="autohide-behavior" type="uint" value="0"/>
