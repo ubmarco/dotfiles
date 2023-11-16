@@ -1,0 +1,6 @@
+Command=/opt/maintenance_ind/maintenance_ind.sh
+UseLabel=0
+Text=(genmon)
+UpdatePeriod=10000
+Font=Noto Sans 9
+

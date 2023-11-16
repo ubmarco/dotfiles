@@ -1,0 +1,15 @@
+Use_Label=true
+Show_Values=false
+Show_Bars=true
+Colorize_Values=false
+Color_In=rgb(255,79,0)
+Color_Out=rgb(28,113,216)
+Text=E
+Network_Device=enp53s0
+Max_In=44800000
+Max_Out=15360000
+Auto_Max=false
+Update_Interval=1000
+Values_As_Bits=false
+Digits=2
+

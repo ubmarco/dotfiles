@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Icon=vmware-horizon
+Exec=vmware-view -d MUC %u
+MimeType=x-scheme-handler/vmware-view
+Categories=Application;Network;
+Name=VMware Horizon Client
+Comment=Connect to VMware Horizon View virtual machines
+Path=
+Terminal=false
+StartupNotify=false
+X-XFCE-Source=file:///home/marco/.local/share/applications/vmware-view.desktop

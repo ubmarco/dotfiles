@@ -1,0 +1,15 @@
+Use_Label=true
+Show_Values=false
+Show_Bars=true
+Colorize_Values=false
+Color_In=rgb(255,79,0)
+Color_Out=rgb(53,132,228)
+Text=W
+Network_Device=wlp0s20f3
+Max_In=41600000
+Max_Out=20480000
+Auto_Max=false
+Update_Interval=1000
+Values_As_Bits=false
+Digits=2
+
