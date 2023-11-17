@@ -1,7 +1,7 @@
 display_label=false
 display_icon=false
 display_power=false
-display_percentage=false
+display_percentage=true
 display_bar=true
 display_time=true
 tooltip_display_percentage=true
