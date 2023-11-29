@@ -3,10 +3,9 @@ Description=Inotify Nextcloud
 
 [Service]
 Type=simple
-# Another Type: forking
 ExecStart="%h"/.dotfiles/unlinked/inotify_shares/inotify_shares.sh
 Restart=on-failure
-# Other restart options: always, on-abort, etc
+RuntimeMaxSec=60
 
 # The install section is needed to use
 # `systemctl enable` to start on boot
