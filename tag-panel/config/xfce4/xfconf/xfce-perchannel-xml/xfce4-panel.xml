@@ -3,6 +3,9 @@
 <channel name="xfce4-panel" version="1.0">
   <property name="configver" type="int" value="2"/>
   <property name="panels" type="array">
+    <value type="int" value="0"/>
+    <value type="int" value="1"/>
+    <value type="int" value="2"/>
     <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-0" type="empty">
       <property name="autohide-behavior" type="uint" value="0"/>
@@ -18,7 +21,7 @@
         <value type="int" value="11"/>
         <value type="int" value="14"/>
         <value type="int" value="24"/>
-        <value type="int" value="18"/>
+        <value type="int" value="30"/>
         <value type="int" value="16"/>
         <value type="int" value="25"/>
         <value type="int" value="23"/>
@@ -170,11 +173,6 @@
         <property name="pressure" type="int" value="0"/>
         <property name="temperature" type="int" value="0"/>
         <property name="windspeed" type="int" value="0"/>
-      </property>
-    </property>
-    <property name="plugin-18" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="16981442321.desktop"/>
       </property>
     </property>
     <property name="plugin-19" type="string" value="netload"/>
@@ -357,6 +355,7 @@
       </property>
       <property name="icon-size" type="int" value="24"/>
       <property name="known-items" type="array">
+        <value type="string" value="zoom"/>
         <value type="string" value="blueman"/>
         <value type="string" value="AutoKey"/>
         <value type="string" value="chrome_status_icon_1"/>
@@ -365,6 +364,8 @@
         <value type="string" value="Nextcloud"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="evolution-alarm-notify"/>
+        <value type="string" value="ethernet network connection “wired connection 2” active"/>
         <value type="string" value="autokey-gtk"/>
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
         <value type="string" value="wi-fi network connection “stockmann” active: stockmann (69%)"/>
@@ -439,8 +440,11 @@
     </property>
     <property name="plugin-8" type="string" value="whiskermenu">
       <property name="favorites" type="array">
+        <value type="string" value="org.mozilla.Thunderbird.desktop"/>
       </property>
       <property name="recent" type="array">
+        <value type="string" value="signal-desktop.desktop"/>
+        <value type="string" value="jitsi-meet-desktop.desktop"/>
         <value type="string" value="xfce-display-settings.desktop"/>
         <value type="string" value="xfce4-power-manager-settings.desktop"/>
         <value type="string" value="org.xfce.mousepad.desktop"/>
@@ -454,6 +458,11 @@
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="known-players" type="string" value="Brave;firefox"/>
       <property name="mpris-players" type="string" value="audacious;chromium.instance106247;chromium.instance11298;chromium.instance115281;chromium.instance11561;chromium.instance118179;chromium.instance121090;chromium.instance128235;chromium.instance136595;chromium.instance137279;chromium.instance140242;chromium.instance154380;chromium.instance155363;chromium.instance159089;chromium.instance165671;chromium.instance189054;chromium.instance1921;chromium.instance208475;chromium.instance2122;chromium.instance2193;chromium.instance221286;chromium.instance229076;chromium.instance233582;chromium.instance23818;chromium.instance2508;chromium.instance256072;chromium.instance259328;chromium.instance267492;chromium.instance273006;chromium.instance27428;chromium.instance290028;chromium.instance2911;chromium.instance30370;chromium.instance305809;chromium.instance308384;chromium.instance34822;chromium.instance351044;chromium.instance352169;chromium.instance353024;chromium.instance356305;chromium.instance359397;chromium.instance360567;chromium.instance39911;chromium.instance404648;chromium.instance407504;chromium.instance413174;chromium.instance4241;chromium.instance440000;chromium.instance479153;chromium.instance503416;chromium.instance520977;chromium.instance529676;chromium.instance551965;chromium.instance55871;chromium.instance65107;chromium.instance65331;chromium.instance654333;chromium.instance6567;chromium.instance67306;chromium.instance71123;chromium.instance7313;chromium.instance792965;chromium.instance894405;chromium.instance93062;chromium.instance95902;clementine;firefox.instance151422;firefox.instance52372;firefox.instance5445;mps-youtube.instance12329;mps-youtube.instance15109;mps-youtube.instance22779;mps-youtube.instance25869;mps-youtube.instance31427;mps-youtube.instance336;mps-youtube.instance5145;mps-youtube.instance5600;mps-youtube.instance6818;mps-youtube.instance6979;mps-youtube.instance9371;vlc;vlc.instance15125;vlc.instance3235;vlc.instance330619;vlc.instance330776;vlc.instance360;vlc.instance7050;vlc.instance9389;vlc.instance9424;vlc.instance9447;vlc.instance983"/>
+    </property>
+    <property name="plugin-30" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="17013396981.desktop"/>
+      </property>
     </property>
   </property>
 </channel>
