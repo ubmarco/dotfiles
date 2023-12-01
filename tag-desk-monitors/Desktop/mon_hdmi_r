@@ -23,5 +23,8 @@ else
   exit 1
 fi
 
+# connect to SC-PM250
+bluetoothctl connect 80:C7:55:3B:9E:B4
+
 # Arrange desktop icons
 xfdesktop -A
