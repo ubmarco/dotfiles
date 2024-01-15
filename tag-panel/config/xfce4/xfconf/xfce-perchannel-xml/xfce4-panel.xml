@@ -453,6 +453,7 @@
         <value type="string" value="bcompare.desktop"/>
         <value type="string" value="lightdm-gtk-greeter-settings.desktop"/>
       </property>
+      <property name="button-icon" type="string" value="/usr/share/icons/ub_logo.ico"/>
     </property>
     <property name="plugin-9" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
