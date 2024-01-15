@@ -800,7 +800,7 @@
         <Column>
           <Title>Name</Title>
           <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
-          <Width>391</Width>
+          <Width>178</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -823,7 +823,7 @@
         <Column>
           <Title>Ext</Title>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>61</Width>
+          <Width>116</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -1094,11 +1094,11 @@
     <PluginPathToBeRelativeTo>%COMMANDER_PATH%</PluginPathToBeRelativeTo>
   </Plugins>
   <MultiRenamePresets>
-    <LastPreset>From_File_Date</LastPreset>
+    <LastPreset>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</LastPreset>
     <Presets>
       <Preset>
         <Name>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</Name>
-        <Filename>[YYYY].[MM].[DD]_[hh].[nn].[ss]_[N]</Filename>
+        <Filename>[YYYY].[MM].[DD]_[hh].[nn].[ss][N]</Filename>
         <Extension>[E]</Extension>
         <FilenameStyle>0</FilenameStyle>
         <ExtensionStyle>0</ExtensionStyle>
@@ -1174,6 +1174,25 @@
       </Preset>
       <Preset>
         <Name>From_File_Date</Name>
+        <Filename>[YYYY].[MM].[DD]_[hh].[nn].[ss]_[N]</Filename>
+        <Extension>[E]</Extension>
+        <FilenameStyle>0</FilenameStyle>
+        <ExtensionStyle>0</ExtensionStyle>
+        <Find/>
+        <Replace/>
+        <RegExp>True</RegExp>
+        <UseSubs>True</UseSubs>
+        <Counter>1</Counter>
+        <Interval>1</Interval>
+        <Width>0</Width>
+        <Log>
+          <Enabled>False</Enabled>
+          <Append>False</Append>
+          <File/>
+        </Log>
+      </Preset>
+      <Preset>
+        <Name>File Change Date</Name>
         <Filename>[YYYY].[MM].[DD]_[hh].[nn].[ss]_[N]</Filename>
         <Extension>[E]</Extension>
         <FilenameStyle>0</FilenameStyle>
