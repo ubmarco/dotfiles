@@ -89,13 +89,27 @@ bindkey '^@dso' fzf-docker-stop-containers
 bindkey '^U' autosuggest-accept
 
 # aliases
-alias 'reset'="tput reset"
-alias 'eo'="exo-open"
-alias 'iotop'="sudo iotop -aPo"
+alias 'reset'="tput reset" # faster reset
+alias 'eo'="exo-open" # open files with system editor
+alias 'xo'='xdg-open' # open files with system editor
+alias 'iotop'="sudo iotop -aPo"  # show processes writing to disk
+alias 'dlb'='git branch --merged | grep -Ev "(^\*|master|main|dev|develop)" | xargs git branch -d' # delete local branches
+alias ff='rg --files --hidden --no-ignore | rg -S' # find files with rg
+alias rgi='rg -i' # insensitive rg
+alias wifi_stats='watch -n1 $HOME/.dotfiles/unlinked/wifi_stats.sh' # show details for wifi connection
+
+# find in pdfs
+alias rgapdf='rga --rga-adapters=poppler'
+
+# exit like in vim
+alias :q='exit'
 
 # fzf
 export FZF_TMUX=0
 export FZF_DEFAULT_OPTS="--height 100% --reverse"
+
+# in case https://github.com/Qix-/better-exceptions is instal/led
+export BETTER_EXCEPTIONS=1
 
 # fzf-widgets: fzf-change-reset-dir
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
