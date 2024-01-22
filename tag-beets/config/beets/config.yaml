@@ -1,6 +1,6 @@
 library: /mnt/data/Sync/Musik/musiclibrary.blb
 directory: /mnt/data/Sync/Musik/Musik_Beets_new
-plugins: inline acousticbrainz discogs
+plugins: inline acousticbrainz discogs duplicates
 import:
   move: yes
   write: yes
