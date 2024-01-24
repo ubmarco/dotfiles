@@ -14,6 +14,9 @@
 [pull]
     ff = only
 
+[fetch]
+	prune = true
+
 [alias]
     s = status -b -s
     co = checkout
@@ -25,11 +28,17 @@
     review = push origin HEAD:refs/for/master
     cl = clean -ffxd -e .idea -e .env -e .history -e .vscode
 
-[diff]
-    tool = bcomp
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 
 [credential]
     helper = cache --timeout=3600
+
+[diff]
+    tool = bcomp
 
 [difftool]
     bcomp = trustExitCode
@@ -53,8 +62,3 @@
 # It's also possible to overwrite above global settings if you like (like the compare tool)
 [include]
     path = ~/.gitconfig.local
-[filter "lfs"]
-    clean = git-lfs clean -- %f
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
