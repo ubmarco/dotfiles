@@ -1,6 +1,6 @@
 library: /mnt/data/Sync/Musik/musiclibrary.blb
 directory: /mnt/data/Sync/Musik/Musik_Beets_new
-plugins: inline acousticbrainz discogs duplicates
+plugins: inline acousticbrainz discogs spotify deezer chroma duplicates
 import:
   move: yes
   write: yes
@@ -33,3 +33,5 @@ item_fields:
   item_month: return "{:02d}".format(month)
   item_day: return "{:02d}".format(day)
   tracknumber_3_digit: return "{:03d}".format(track)
+chrome:
+  auto: no
