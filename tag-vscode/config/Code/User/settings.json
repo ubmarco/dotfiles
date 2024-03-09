@@ -51,7 +51,8 @@
   },
   "files.watcherExclude": {
     "**/.tox/**": true,
-    "**/target/**": true
+    "**/target/**": true,
+    "**/dist/**": true,
   },
   "files.insertFinalNewline": true,
   "git.autofetch": true,
