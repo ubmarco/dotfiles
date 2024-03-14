@@ -36,16 +36,16 @@ alias xo='xdg-open'
 # fzf search installed packages (fip==find installed package)
 # you may add one ore more query options with a space,
 # the options are directly added to 'pacman -Qq', so reasonable examples are
-# fp    -- find all packages
-# fp d  -- List packages installed as dependencies
-# fp e  -- List packages explicitly installed
-# fp g  -- View all members of a package group
-# fp m  -- List installed packages not found in sync db(s)
-# fp n  -- List installed packages found in sync db(s)
-# fp t  -- List packages not required by any package
-# fp u  -- List packages that can be upgraded
-# fp me -- Combination example: list external (AUR) packages (explicitly installed)
-# fp md -- Combination example: list external (AUR) packages (installed as dependencies)
+# fip    -- find all packages
+# fip d  -- List packages installed as dependencies
+# fip e  -- List packages explicitly installed
+# fip g  -- View all members of a package group
+# fip m  -- List installed packages not found in sync db(s)
+# fip n  -- List installed packages found in sync db(s)
+# fip t  -- List packages not required by any package
+# fip u  -- List packages that can be upgraded
+# fip me -- Combination example: list external (AUR) packages (explicitly installed)
+# fip md -- Combination example: list external (AUR) packages (installed as dependencies)
 fip() {
     pacman -Qq$1 | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
 }
