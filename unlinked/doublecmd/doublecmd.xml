@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="1.0.11" ConfigVersion="13">
+<doublecmd DCVersion="1.1.12 gamma" ConfigVersion="15">
   <Toolbars>
     <MainToolbar>
       <Row>
@@ -218,7 +218,7 @@
     <FolderTabs Save="False"/>
   </Configuration>
   <Language>
-    <POFileName>doublecmd.en.po</POFileName>
+    <POFileName>doublecmd.pot</POFileName>
   </Language>
   <Behaviours>
     <GoToRoot>False</GoToRoot>
@@ -245,6 +245,7 @@
     <PersonalizedMega>MB</PersonalizedMega>
     <PersonalizedGiga>GB</PersonalizedGiga>
     <PersonalizedTera>TB</PersonalizedTera>
+    <ConfirmQuit>False</ConfirmQuit>
     <MinimizeToTray>False</MinimizeToTray>
     <AlwaysShowTrayIcon>False</AlwaysShowTrayIcon>
     <Mouse>
@@ -256,11 +257,12 @@
       <ScrollMode>1</ScrollMode>
       <WheelScrollLines>3</WheelScrollLines>
     </Mouse>
-    <AutoFillColumns>True</AutoFillColumns>
+    <AutoFillColumns>False</AutoFillColumns>
     <AutoSizeColumn>0</AutoSizeColumn>
     <CustomColumnsChangeAllColumns>False</CustomColumnsChangeAllColumns>
     <BriefViewFileExtAligned>False</BriefViewFileExtAligned>
     <DateTimeFormat>yyyy.mm.dd hh:nn:ss</DateTimeFormat>
+    <ColumnsTitleLikeValues>False</ColumnsTitleLikeValues>
     <CutTextToColumnWidth>True</CutTextToColumnWidth>
     <ExtendCellWidth>False</ExtendCellWidth>
     <ShowSystemFiles>False</ShowSystemFiles>
@@ -353,6 +355,12 @@
       <Style>0</Style>
       <Quality>0</Quality>
     </TreeViewMenu>
+    <StatusBar>
+      <Name>default</Name>
+      <Size>0</Size>
+      <Style>0</Style>
+      <Quality>0</Quality>
+    </StatusBar>
   </Fonts>
   <Colors>
     <UseCursorBorder>False</UseCursorBorder>
@@ -387,7 +395,6 @@
       <Error>255</Error>
       <Success>32768</Success>
     </LogWindow>
-    <FileFilters/>
   </Colors>
   <ToolTips>
     <ShowToolTipMode>True</ShowToolTipMode>
@@ -453,6 +460,7 @@
     <ColumnsView>
       <AutoSaveWidth>True</AutoSaveWidth>
       <TitleStyle>2</TitleStyle>
+      <LongInStatus>False</LongInStatus>
     </ColumnsView>
     <BriefView>
       <FileExtAligned>False</FileExtAligned>
@@ -465,6 +473,7 @@
     <ExtraLineSpan>2</ExtraLineSpan>
     <FolderPrefix>[</FolderPrefix>
     <FolderPostfix>]</FolderPostfix>
+    <RenameConfirmMouse>False</RenameConfirmMouse>
   </FilesViews>
   <Keyboard>
     <Typing>
@@ -546,6 +555,8 @@
     <DirHistory Save="False"/>
     <CmdLineHistory Save="True"/>
     <FileMaskHistory Save="True"/>
+    <VolumeSizeHistory Save="True"/>
+    <CreateDirectoriesHistory Save="True"/>
   </History>
   <QuickSearch>
     <MatchBeginning>False</MatchBeginning>
@@ -575,6 +586,9 @@
     <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
     <PathModifierElements>0</PathModifierElements>
     <DefaultTextEncoding>none</DefaultTextEncoding>
+    <SystemItemProperties>False</SystemItemProperties>
+    <DoubleClickEditPath>False</DoubleClickEditPath>
+    <DecimalSeparator>�</DecimalSeparator>
   </Miscellaneous>
   <Thumbnails Save="True">
     <Width>128</Width>
@@ -647,12 +661,20 @@
     <BackgroundColor>0</BackgroundColor>
     <FontColor>16777215</FontColor>
     <TextPosition>0</TextPosition>
+    <ImageShowTransparency>False</ImageShowTransparency>
+    <WrapText>False</WrapText>
+    <AutoCopy>True</AutoCopy>
+    <SynEditMask>*</SynEditMask>
+    <JpegQuality>80</JpegQuality>
+    <MaxCodeSize>128</MaxCodeSize>
   </Viewer>
   <Editor>
     <EditWaitTime>2000</EditWaitTime>
     <SynEditOptions>856075</SynEditOptions>
     <SynEditTabWidth>8</SynEditTabWidth>
     <SynEditRightEdge>80</SynEditRightEdge>
+    <SynEditBlockIndent>2</SynEditBlockIndent>
+    <FindWordAtCursor>True</FindWordAtCursor>
   </Editor>
   <Differ>
     <IgnoreCase>False</IgnoreCase>
@@ -681,12 +703,13 @@
     <FilterCopyLeft>True</FilterCopyLeft>
     <FilterDuplicates>True</FilterDuplicates>
     <FilterSingles>True</FilterSingles>
-    <FileMask>*</FileMask>
+    <FileMask Save="True">*</FileMask>
     <Colors>
       <Left>32768</Left>
       <Right>16711680</Right>
       <Unknown>255</Unknown>
     </Colors>
+    <DateTimeFormat>yyyy.mm.dd hh:nn:ss</DateTimeFormat>
   </SyncDirs>
   <InternalAssociations>
     <OfferToAddNewFileType>False</OfferToAddNewFileType>
@@ -699,6 +722,7 @@
     <FilenameStyle>0</FilenameStyle>
     <PathToBeRelativeTo>%COMMANDER_PATH%</PathToBeRelativeTo>
     <PathModifierElements>0</PathModifierElements>
+    <DefaultContextActions>True</DefaultContextActions>
   </InternalAssociations>
   <TreeViewMenu>
     <UseTVMDirectoryHotlistFMC>False</UseTVMDirectoryHotlistFMC>
@@ -790,17 +814,17 @@
   <ColumnsSets DefaultTitleHash="540805403">
     <ColumnsSet UseFrameCursor="False">
       <Name>Default</Name>
+      <Unique>5DCB01C4-61D2-4C1F-9BF3-88E8E201FEF6</Unique>
       <CustomView>False</CustomView>
       <FileSystem>&lt;General&gt;</FileSystem>
       <PixelsPerInch>96</PixelsPerInch>
-      <CursorBorder Enabled="False">
-        <Color>-2147483635</Color>
-      </CursorBorder>
+      <CursorBorder Enabled="False"/>
       <Columns>
         <Column>
           <Title>Name</Title>
+          <Unique>A449D783-A242-40E2-8632-3796F4E62DDE</Unique>
           <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
-          <Width>178</Width>
+          <Width>577</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -808,22 +832,15 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>255</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Ext</Title>
+          <Unique>C5C9CEC1-2648-48FD-8F63-8F5B5EE20E92</Unique>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>116</Width>
+          <Width>76</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -831,20 +848,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>255</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Size</Title>
+          <Unique>8104EC2B-0FE9-41B2-A4B5-C95965896404</Unique>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
           <Width>70</Width>
           <Align>1</Align>
@@ -854,20 +864,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>255</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Date</Title>
+          <Unique>CF11D56A-6261-44D7-BBCD-91F513D8E06F</Unique>
           <FuncString>[DC().GETFILETIME{}]</FuncString>
           <Width>159</Width>
           <Align>2</Align>
@@ -877,20 +880,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>255</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Owner</Title>
+          <Unique>B8ACEB05-C41A-45FE-AA87-22A5BE3B88EB</Unique>
           <FuncString>[DC().GETFILEOWNER{}]</FuncString>
           <Width>62</Width>
           <Align>2</Align>
@@ -900,20 +896,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>255</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Group</Title>
+          <Unique>F46B858C-21CD-4990-8A61-A740CFC2CA94</Unique>
           <FuncString>[DC().GETFILEGROUP{}]</FuncString>
           <Width>59</Width>
           <Align>2</Align>
@@ -923,20 +912,13 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>255</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
         </Column>
         <Column>
           <Title>Attr</Title>
+          <Unique>46031D30-67FE-42F6-964E-AE4AE073703C</Unique>
           <FuncString>[DC().GETFILEATTR{}]</FuncString>
           <Width>91</Width>
           <Align>2</Align>
@@ -946,14 +928,6 @@
             <Style>0</Style>
             <Quality>0</Quality>
           </Font>
-          <TextColor>-2147483640</TextColor>
-          <Background>-2147483643</Background>
-          <Background2>-2147483643</Background2>
-          <MarkColor>255</MarkColor>
-          <CursorColor>-2147483635</CursorColor>
-          <CursorText>-2147483634</CursorText>
-          <InactiveCursorColor>-2147483645</InactiveCursorColor>
-          <InactiveMarkColor>255</InactiveMarkColor>
           <UseInvertedSelection>False</UseInvertedSelection>
           <UseInactiveSelColor>False</UseInactiveSelColor>
           <Overcolor>True</Overcolor>
@@ -1049,6 +1023,26 @@
         <Path>%commander_path%/plugins/wcx/unrar/unrar.wcx</Path>
         <Flags>607</Flags>
       </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>b64</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/base64/base64.wcx</Path>
+        <Flags>1</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>b64</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/base64/base64.wcx</Path>
+        <Flags>1</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>b64</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/base64/base64.wcx</Path>
+        <Flags>1</Flags>
+      </WcxPlugin>
+      <WcxPlugin Enabled="True">
+        <ArchiveExt>b64</ArchiveExt>
+        <Path>%commander_path%/plugins/wcx/base64/base64.wcx</Path>
+        <Flags>1</Flags>
+      </WcxPlugin>
     </WcxPlugins>
     <WdxPlugins>
       <WdxPlugin>
@@ -1098,7 +1092,7 @@
     <Presets>
       <Preset>
         <Name>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</Name>
-        <Filename>[YYYY].[MM].[DD]_[hh].[nn].[ss][N]</Filename>
+        <Filename>CD1 [N]</Filename>
         <Extension>[E]</Extension>
         <FilenameStyle>0</FilenameStyle>
         <ExtensionStyle>0</ExtensionStyle>
@@ -1106,6 +1100,8 @@
         <Replace/>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
+        <CaseSensitive>False</CaseSensitive>
+        <OnlyFirst>False</OnlyFirst>
         <Counter>1</Counter>
         <Interval>1</Interval>
         <Width>0</Width>
@@ -1125,6 +1121,8 @@
         <Replace>$1.$2.$3_$4.$5.$6</Replace>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
+        <CaseSensitive>False</CaseSensitive>
+        <OnlyFirst>False</OnlyFirst>
         <Counter>1</Counter>
         <Interval>1</Interval>
         <Width>0</Width>
@@ -1144,6 +1142,8 @@
         <Replace>.jpg</Replace>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
+        <CaseSensitive>False</CaseSensitive>
+        <OnlyFirst>False</OnlyFirst>
         <Counter>1</Counter>
         <Interval>1</Interval>
         <Width>0</Width>
@@ -1163,6 +1163,8 @@
         <Replace>$1.$2.$3_$4.$5.$6</Replace>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
+        <CaseSensitive>False</CaseSensitive>
+        <OnlyFirst>False</OnlyFirst>
         <Counter>1</Counter>
         <Interval>1</Interval>
         <Width>0</Width>
@@ -1182,6 +1184,8 @@
         <Replace/>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
+        <CaseSensitive>False</CaseSensitive>
+        <OnlyFirst>False</OnlyFirst>
         <Counter>1</Counter>
         <Interval>1</Interval>
         <Width>0</Width>
@@ -1201,6 +1205,8 @@
         <Replace/>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
+        <CaseSensitive>False</CaseSensitive>
+        <OnlyFirst>False</OnlyFirst>
         <Counter>1</Counter>
         <Interval>1</Interval>
         <Width>0</Width>
