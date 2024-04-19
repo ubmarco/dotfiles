@@ -46,13 +46,12 @@
     "**/.factorypath": true,
     "**/.git": false,
     "**/.project": true,
-    "**/.settings": true,
-    "build/**": true
+    "**/.settings": true
   },
   "files.watcherExclude": {
     "**/.tox/**": true,
     "**/target/**": true,
-    "**/dist/**": true,
+    "**/dist/**": true
   },
   "files.insertFinalNewline": true,
   "debug.autoExpandLazyVariables": true,
