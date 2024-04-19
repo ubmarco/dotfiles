@@ -55,6 +55,7 @@
     "**/dist/**": true,
   },
   "files.insertFinalNewline": true,
+  "debug.autoExpandLazyVariables": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.pullTags": false,
