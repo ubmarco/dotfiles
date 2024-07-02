@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="1.1.14 gamma" ConfigVersion="15">
+<doublecmd DCVersion="1.1.16 gamma" ConfigVersion="15">
   <Toolbars>
     <MainToolbar>
       <Row>
@@ -824,7 +824,7 @@
           <Title>Name</Title>
           <Unique>A449D783-A242-40E2-8632-3796F4E62DDE</Unique>
           <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
-          <Width>577</Width>
+          <Width>474</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -840,7 +840,7 @@
           <Title>Ext</Title>
           <Unique>C5C9CEC1-2648-48FD-8F63-8F5B5EE20E92</Unique>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>76</Width>
+          <Width>40</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -856,7 +856,7 @@
           <Title>Size</Title>
           <Unique>8104EC2B-0FE9-41B2-A4B5-C95965896404</Unique>
           <FuncString>[DC().GETFILESIZE{}]</FuncString>
-          <Width>70</Width>
+          <Width>106</Width>
           <Align>1</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>

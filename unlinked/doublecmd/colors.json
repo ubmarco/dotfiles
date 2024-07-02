@@ -77,7 +77,7 @@
               CursorColor : -2147483635,
               CursorText : -2147483634,
               InactiveCursorColor : -2147483645,
-              InactiveMarkColor : 255
+              InactiveMarkColor : 128
             },
             {
               Unique : "C5C9CEC1-2648-48FD-8F63-8F5B5EE20E92",
@@ -89,7 +89,7 @@
               CursorColor : -2147483635,
               CursorText : -2147483634,
               InactiveCursorColor : -2147483645,
-              InactiveMarkColor : 255
+              InactiveMarkColor : 128
             },
             {
               Unique : "8104EC2B-0FE9-41B2-A4B5-C95965896404",
@@ -101,7 +101,7 @@
               CursorColor : -2147483635,
               CursorText : -2147483634,
               InactiveCursorColor : -2147483645,
-              InactiveMarkColor : 255
+              InactiveMarkColor : 128
             },
             {
               Unique : "CF11D56A-6261-44D7-BBCD-91F513D8E06F",
@@ -113,7 +113,7 @@
               CursorColor : -2147483635,
               CursorText : -2147483634,
               InactiveCursorColor : -2147483645,
-              InactiveMarkColor : 255
+              InactiveMarkColor : 128
             },
             {
               Unique : "B8ACEB05-C41A-45FE-AA87-22A5BE3B88EB",
@@ -125,7 +125,7 @@
               CursorColor : -2147483635,
               CursorText : -2147483634,
               InactiveCursorColor : -2147483645,
-              InactiveMarkColor : 255
+              InactiveMarkColor : 128
             },
             {
               Unique : "F46B858C-21CD-4990-8A61-A740CFC2CA94",
@@ -137,7 +137,7 @@
               CursorColor : -2147483635,
               CursorText : -2147483634,
               InactiveCursorColor : -2147483645,
-              InactiveMarkColor : 255
+              InactiveMarkColor : 128
             },
             {
               Unique : "46031D30-67FE-42F6-964E-AE4AE073703C",
@@ -149,7 +149,7 @@
               CursorColor : -2147483635,
               CursorText : -2147483634,
               InactiveCursorColor : -2147483645,
-              InactiveMarkColor : 255
+              InactiveMarkColor : 128
             }
           ]
         }
@@ -1253,6 +1253,53 @@
                 {
                   Name : "Address",
                   Attributes : "$00000096,$1FFFFFFF;False:False."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          Name : "Go",
+          Ranges : [
+            {
+              Name : "Root",
+              Attributes : "$80000008,$80000005;False:False.",
+              KeyLists : [
+                {
+                  Name : "Keywords",
+                  Attributes : "$00FF0000,$80000005;False:True."
+                },
+                {
+                  Name : "Types",
+                  Attributes : "$00000080,$80000005;False:True."
+                },
+                {
+                  Name : "Functions",
+                  Attributes : "$00800000,$80000005;False:True."
+                }
+              ],
+              Ranges : [
+                {
+                  Name : "Strings `..`",
+                  Attributes : "$00696969,$80000005;False:True."
+                },
+                {
+                  Name : "Strings \"..\"",
+                  Attributes : "$00696969,$80000005;False:True.",
+                  KeyLists : [
+                    {
+                      Name : "Escape",
+                      Attributes : "$00696969,$80000005;True:True."
+                    }
+                  ]
+                },
+                {
+                  Name : "Remarks //",
+                  Attributes : "$00008000,$80000005;False:True."
+                },
+                {
+                  Name : "Remarks /*..*/",
+                  Attributes : "$00008000,$80000005;False:True."
                 }
               ]
             }
