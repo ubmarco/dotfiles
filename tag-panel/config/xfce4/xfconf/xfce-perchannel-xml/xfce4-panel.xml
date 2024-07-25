@@ -152,7 +152,7 @@
         <property name="name" type="string" value="Munich, Germany"/>
       </property>
       <property name="msl" type="int" value="519"/>
-      <property name="offset" type="string" value="+01:00"/>
+      <property name="offset" type="string" value="+02:00"/>
       <property name="power-saving" type="bool" value="true"/>
       <property name="round" type="bool" value="true"/>
       <property name="scrollbox" type="empty">
