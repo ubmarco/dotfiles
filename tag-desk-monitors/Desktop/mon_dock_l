@@ -8,11 +8,17 @@ if [ "$hostname" = "tux09" ]; then
   xrandr --output eDP-1 --mode 2560x1600 --pos 2560x810 --output DP-1 --off --output HDMI-1 --off --output DP-3 --mode 2560x1440 --pos 0x0 --primary
   # Load panel config
   ~/.dotfiles/unlinked/panel-config/set_panels.sh -c2
+  # automatic for Panel 1 puts it to the leftmode screen,
+  # however if the Primary is already left, it leads to overlapping panels;
+  # set panel-1 manually to the Laptop screen
+  sleep 1
+  xfconf-query -c xfce4-panel --create --type string -p /panels/panel-0/output-name -s Primary
+  xfconf-query -c xfce4-panel --create --type string -p /panels/panel-1/output-name -s eDP-1
 else
   echo "Hostname ${hostname} unknown"
   exit 1
 fi
-set_panels.sh
+
 # connect to SC-PM250
 bluetoothctl connect 80:C7:55:3B:9E:B4
 
