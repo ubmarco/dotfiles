@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<doublecmd DCVersion="1.1.16 gamma" ConfigVersion="15">
+<doublecmd DCVersion="1.1.24 gamma" ConfigVersion="15">
   <Toolbars>
     <MainToolbar>
       <Row>
@@ -265,7 +265,7 @@
     <ColumnsTitleLikeValues>False</ColumnsTitleLikeValues>
     <CutTextToColumnWidth>True</CutTextToColumnWidth>
     <ExtendCellWidth>False</ExtendCellWidth>
-    <ShowSystemFiles>False</ShowSystemFiles>
+    <ShowSystemFiles>True</ShowSystemFiles>
     <ListFilesInThread>True</ListFilesInThread>
     <LoadIconsSeparately>True</LoadIconsSeparately>
     <DelayLoadingTabs>True</DelayLoadingTabs>
@@ -545,6 +545,7 @@
       <MulRenFilenameWithFullPathInLog>False</MulRenFilenameWithFullPathInLog>
       <MulRenPathRangeSeparator>- </MulRenPathRangeSeparator>
     </MultiRename>
+    <DefaultDropEffect>True</DefaultDropEffect>
   </FileOperations>
   <Log Enabled="False" Count="0" LogFileWithDateInName="False">
     <FileName>%DC_CONFIG_PATH%/doublecmd.log</FileName>
@@ -552,7 +553,7 @@
   </Log>
   <History>
     <SearchReplaceHistory Save="True"/>
-    <DirHistory Save="False"/>
+    <DirHistory Save="False" Count="30"/>
     <CmdLineHistory Save="True"/>
     <FileMaskHistory Save="True"/>
     <VolumeSizeHistory Save="True"/>
@@ -628,6 +629,9 @@
   <DirectoryHotList>
     <HotDir Name="Downloads" Path="/home/marco/Downloads"/>
     <HotDir Name="share_c_level" Path="/home/marco/share_c_level"/>
+    <HotDir Name="share_c_level / 01_Geschätsplanung / 04_OKRs" Path="/home/marco/share_c_level/01_Geschätsplanung/04_OKRs"/>
+    <HotDir Name="share_c_level / 01_Geschätsplanung / 30_Investoren" Path="/home/marco/share_c_level/01_Geschätsplanung/30_Investoren"/>
+    <HotDir Name="share_c_level / 05_HR" Path="/home/marco/share_c_level/05_HR"/>
     <HotDir Name="share_c_level / 03_Buchhaltung" Path="/home/marco/share_c_level/00_orga/03_Buchhaltung"/>
     <HotDir Name="share_project_files" Path="/home/marco/share_project_files"/>
     <HotDir Name="share_ub_int" Path="/home/marco/share_ub_int"/>
@@ -703,13 +707,14 @@
     <FilterCopyLeft>True</FilterCopyLeft>
     <FilterDuplicates>True</FilterDuplicates>
     <FilterSingles>True</FilterSingles>
-    <FileMask Save="True">*</FileMask>
+    <FileMask Save="True">m-ut</FileMask>
     <Colors>
       <Left>32768</Left>
       <Right>16711680</Right>
       <Unknown>255</Unknown>
     </Colors>
     <DateTimeFormat>yyyy.mm.dd hh:nn:ss</DateTimeFormat>
+    <FilterUnknown>True</FilterUnknown>
   </SyncDirs>
   <InternalAssociations>
     <OfferToAddNewFileType>False</OfferToAddNewFileType>
@@ -824,7 +829,7 @@
           <Title>Name</Title>
           <Unique>A449D783-A242-40E2-8632-3796F4E62DDE</Unique>
           <FuncString>[DC().GETFILENAMENOEXT{}]</FuncString>
-          <Width>474</Width>
+          <Width>440</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -840,7 +845,7 @@
           <Title>Ext</Title>
           <Unique>C5C9CEC1-2648-48FD-8F63-8F5B5EE20E92</Unique>
           <FuncString>[DC().GETFILEEXT{}]</FuncString>
-          <Width>40</Width>
+          <Width>91</Width>
           <Align>0</Align>
           <Font>
             <Name>Hack Nerd Font Mono</Name>
@@ -1071,7 +1076,7 @@
         <Name>FTP</Name>
         <Path>%commander_path%/plugins/wfx/ftp/ftp.wfx</Path>
       </WfxPlugin>
-      <WfxPlugin Enabled="True">
+      <WfxPlugin Enabled="False">
         <Name>Windows Network</Name>
         <Path>%commander_path%/plugins/wfx/samba/samba.wfx</Path>
       </WfxPlugin>
@@ -1097,12 +1102,12 @@
     <Presets>
       <Preset>
         <Name>{BC322BF1-2185-47F6-9F99-D27ED1E23E53}</Name>
-        <Filename>CD1 [N]</Filename>
+        <Filename>[YYYY].[MM].[DD]_[hh].[nn].[ss]_[N]</Filename>
         <Extension>[E]</Extension>
         <FilenameStyle>0</FilenameStyle>
         <ExtensionStyle>0</ExtensionStyle>
-        <Find/>
-        <Replace/>
+        <Find>(\d{2}).(\d{2}).(\d{4}) (\d{2}):(\d{2}):(\d{2})</Find>
+        <Replace>$3.$2.$1_$4.$5.$6</Replace>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
         <CaseSensitive>False</CaseSensitive>
@@ -1208,6 +1213,27 @@
         <ExtensionStyle>0</ExtensionStyle>
         <Find/>
         <Replace/>
+        <RegExp>True</RegExp>
+        <UseSubs>True</UseSubs>
+        <CaseSensitive>False</CaseSensitive>
+        <OnlyFirst>False</OnlyFirst>
+        <Counter>1</Counter>
+        <Interval>1</Interval>
+        <Width>0</Width>
+        <Log>
+          <Enabled>False</Enabled>
+          <Append>False</Append>
+          <File/>
+        </Log>
+      </Preset>
+      <Preset>
+        <Name>Exif Rename 2024</Name>
+        <Filename>[=Plugin(&lt;Exif&gt;).Date taken{}]_[N]</Filename>
+        <Extension>[E]</Extension>
+        <FilenameStyle>0</FilenameStyle>
+        <ExtensionStyle>0</ExtensionStyle>
+        <Find>(\d{2}).(\d{2}).(\d{4}) (\d{2}):(\d{2}):(\d{2})</Find>
+        <Replace>$3.$2.$1_$4.$5.$6</Replace>
         <RegExp>True</RegExp>
         <UseSubs>True</UseSubs>
         <CaseSensitive>False</CaseSensitive>
