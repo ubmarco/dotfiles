@@ -1,0 +1,4 @@
+[[manager.prepend_keymap]]
+on   = "T"
+run  = 'shell --detach kitty --working-directory $PWD'
+desc = "Open shell here"
