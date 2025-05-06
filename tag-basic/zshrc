@@ -21,7 +21,7 @@ source "$HOME/.antigen/antigen/antigen.zsh"
 antigen use oh-my-zsh
 
 
-antigen bundle lukechilds/zsh-nvm
+# antigen bundle lukechilds/zsh-nvm
 antigen bundle command-not-found
 antigen bundle docker
 antigen bundle docker-compose
