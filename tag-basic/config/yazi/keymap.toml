@@ -2,3 +2,8 @@
 on   = "T"
 run  = 'shell --detach kitty --working-directory $PWD'
 desc = "Open shell here"
+
+[[manager.prepend_keymap]]
+desc = "Start bunny.yazi"
+on = "b"
+run = "plugin bunny"

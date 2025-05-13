@@ -1,3 +1,8 @@
+[[plugin.deps]]
+use = "stelcodes/bunny"
+rev = "1062775"
+hash = "f9cc64457c9fbab166894c0c8cb5598d"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
 rev = "02f3fc6"
