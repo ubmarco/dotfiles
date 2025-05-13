@@ -2,24 +2,3 @@
 on   = "T"
 run  = 'shell --detach kitty --working-directory $PWD'
 desc = "Open shell here"
-
-[[manager.prepend_keymap]]
-on = [ "b", "m" ]
-run = "plugin bookmarks save"
-desc = "Save current position as a bookmark"
-
-[[manager.prepend_keymap]]
-on = [ "b", "b" ]
-run = "plugin bookmarks jump"
-desc = "Jump to a bookmark"
-
-[[manager.prepend_keymap]]
-on = [ "b", "d" ]
-run = "plugin bookmarks delete"
-desc = "Delete a bookmark"
-
-[[manager.prepend_keymap]]
-on = [ "b", "D" ]
-run = "plugin bookmarks delete_all"
-desc = "Delete all bookmarks"
-
