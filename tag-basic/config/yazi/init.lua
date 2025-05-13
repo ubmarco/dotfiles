@@ -1,8 +1,8 @@
 require("bunny"):setup({
 	hops = {
 		{ key = "/",          path = "/", },
-		{ key = "t",          path = "/tmp", },
-		{ key = { "t", "p" }, path = "/tmp/pytest-of-marco", },
+		{ key = { "t", "r" }, path = "/tmp", },
+		{ key = { "t", "p" }, path = "/tmp/pytest-of-marco/pytest-current", },
 		{ key = "h",          path = "~",                                      desc = "Home" },
 		{ key = "m",          path = "~/Music",                                desc = "Music" },
 		{ key = "d",          path = "~/Desktop",                              desc = "Desktop" },
