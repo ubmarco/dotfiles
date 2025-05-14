@@ -3,7 +3,7 @@
 # antigen version: 2.2.2
 
 export TERM="xterm-256color"
-export EDITOR="vim"
+export EDITOR=/home/marco/.local/bin/lvim
 
 HIST_STAMPS="yyyy-mm-dd"
 UPDATE_ZSH_DAYS="30"
