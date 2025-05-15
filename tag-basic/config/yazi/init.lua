@@ -7,7 +7,7 @@ require("bunny"):setup({
 		{ key = "m",          path = "~/Music",                                desc = "Music" },
 		{ key = { "n", "u" }, path = "/mnt/dlink_nas", },
 		{ key = { "n", "h" }, path = "/mnt/dlink_nas_home", },
-		{ key = "d",          path = "~/Downloads",                              desc = "Desktop" },
+		{ key = "d",          path = "~/Downloads",                            desc = "Desktop" },
 		{ key = { "s", "r" }, path = "~/share_c_level", },
 		{ key = { "s", "b" }, path = "~/share_c_level/00_orga/03_Buchhaltung", },
 		{ key = { "l", "s" }, path = "~/.local/share",                         desc = "Local share" },
