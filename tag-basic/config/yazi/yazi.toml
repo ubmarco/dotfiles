@@ -5,9 +5,9 @@ sort_by = "natural"
 play = [
     { run = 'mpv "$@"', orphan = true, for = "unix" },
 ]
-edit = [
-    { run = 'kitty -e lvim "$@"', block = true, for = "unix" },
-]
+# edit = [
+#     { run = 'shell --detach \"kitty -e lvim "$@"\"', block = true, for = "unix" },
+# ]
 open = [
     { run = 'xdg-open "$@"', desc = "Open" },
     { run = 'code "$@"', desc = "VS Code" },
