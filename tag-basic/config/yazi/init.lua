@@ -6,7 +6,7 @@ require("bunny"):setup({
 		{ key = "h",          path = "~",                                           desc = "Home" },
 		{ key = { "m", "u" }, path = "/mnt/dlink_nas", },
 		{ key = { "m", "h" }, path = "/mnt/dlink_nas_home", },
-		{ key = "d",          path = "~/Downloads",                                 desc = "Desktop" },
+		{ key = "d",          path = "~/Downloads",                                 desc = "Downloads" },
 		{ key = { "s", "r" }, path = "~/share_c_level",                             desc = "share_c_level" },
 		{ key = { "s", "b" }, path = "~/share_c_level/00_orga/03_Buchhaltung/2025", desc = "share_c_level / Buchhaltung" },
 		-- key and path attributes are required, desc is optional
