@@ -3,6 +3,11 @@ use = "stelcodes/bunny"
 rev = "1062775"
 hash = "f9cc64457c9fbab166894c0c8cb5598d"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-filter"
+rev = "55bf699"
+hash = "f0c4b41b5d19a3144958383333eff6e7"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:dracula"
 rev = "02f3fc6"

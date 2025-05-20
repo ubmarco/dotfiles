@@ -7,3 +7,19 @@ desc = "Open shell here"
 desc = "Start bunny.yazi"
 on = "b"
 run = "plugin bunny"
+
+[[manager.prepend_keymap]]
+on   = "F"
+run  = "plugin smart-filter"
+desc = "Smart filter"
+
+# Exit input directly, without entering Vi mode, making it behave like a regular input box
+[[input.prepend_keymap]]
+on   = "<Esc>"
+run  = "close"
+desc = "Cancel input"
+
+# Drag and drop via https://github.com/mwh/dragon
+[[manager.prepend_keymap]]
+on  = "<C-n>"
+run = 'shell -- dragon-drop -x -i -T "$1"'
