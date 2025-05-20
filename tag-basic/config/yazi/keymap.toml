@@ -23,3 +23,13 @@ desc = "Cancel input"
 [[manager.prepend_keymap]]
 on  = "<C-n>"
 run = 'shell -- dragon-drop -x -i -T "$1"'
+
+[[manager.prepend_keymap]]
+on   = "2"
+run  = "plugin smart-switch 1"
+desc = "Switch or create tab 2"
+
+[[manager.prepend_keymap]]
+on   = "3"
+run  = "plugin smart-switch 2"
+desc = "Switch or create tab 3"
