@@ -9,6 +9,8 @@ require("bunny"):setup({
 		{ key = "d",          path = "~/Downloads",                                 desc = "Downloads" },
 		{ key = { "s", "r" }, path = "~/share_c_level",                             desc = "share_c_level" },
 		{ key = { "s", "b" }, path = "~/share_c_level/00_orga/03_Buchhaltung/2025", desc = "share_c_level / Buchhaltung" },
+		{ key = { "f" },      path = "/mnt/data/Sync/Fotos", },
+
 		-- key and path attributes are required, desc is optional
 	},
 	desc_strategy = "path", -- If desc isn't present, use "path" or "filename", default is "path"
