@@ -1,14 +1,14 @@
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "T"
 run  = 'shell --detach kitty --working-directory $PWD'
 desc = "Open shell here"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 desc = "Start bunny.yazi"
 on = "b"
 run = "plugin bunny"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "F"
 run  = "plugin smart-filter"
 desc = "Smart filter"
@@ -20,16 +20,16 @@ run  = "close"
 desc = "Cancel input"
 
 # Drag and drop via https://github.com/mwh/dragon
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on  = "<C-n>"
 run = 'shell -- dragon-drop -x -i -T "$1"'
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "2"
 run  = "plugin smart-switch 1"
 desc = "Switch or create tab 2"
 
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = "3"
 run  = "plugin smart-switch 2"
 desc = "Switch or create tab 3"
