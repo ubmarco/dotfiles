@@ -637,6 +637,7 @@
     <HotDir Name="share_ub_int" Path="/home/marco/share_ub_int"/>
     <HotDir Name="share_p_level" Path="/home/marco/share_p_level"/>
     <HotDir Name="/mnt/dlink_nas/98_scanner/" Path="/mnt/dlink_nas/98_scanner"/>
+    <HotDir Name="/tmp/pytest-of-marco/" Path="/tmp/pytest-of-marco"/>
     <HotDir Name="Sync" Path="/mnt/data/Sync"/>
     <HotDir Name="Sync / Daten" Path="/mnt/data/Sync/Daten"/>
   </DirectoryHotList>
