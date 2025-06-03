@@ -31,6 +31,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.renderWhitespace": "all",
   "editor.rulers": [120],
+  "editor.stickyScroll.enabled": true,
   "editor.suggestSelection": "first",
   "editor.wordWrapColumn": 120,
   "files.associations": {
@@ -54,7 +55,6 @@
     "**/dist/**": true
   },
   "files.insertFinalNewline": true,
-  "debug.autoExpandLazyVariables": true,
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.pullTags": false,
@@ -178,6 +178,9 @@
     },
     "editor.formatOnType": true
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[yaml]": {
     "editor.rulers": [99],
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -187,8 +190,8 @@
     "editor.formatOnSave": false
   },
   "search.useIgnoreFiles": false,
+  "security.promptForLocalFileProtocolHandling": false,
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Default Dark+",
   "hediet.vscode-drawio.resizeImages": null,
-  "editor.stickyScroll.enabled": true
 }
